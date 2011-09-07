@@ -1,0 +1,15 @@
+<h1>Single Season Batting Comparison <span title="Hover over numbers or click on glossary tab to learn more"><%= image_tag("question.gif")%></span></h1>
+
+
+<div id = 'batting_simple'>
+	<div id='chart'></div>
+	<%= raw @chart.render('chart') %>
+</div>
+		
+<div id = 'batting_advanced'>
+	<div id='table'></div>
+	<%= raw @table.render('table') %>
+</div>
+<br/>
+<%= submit_tag "View Advanced Stats", :id => "batting_advanced_button" %>
+<%= submit_tag "View Simple Stats", :id => "batting_simple_button" %>

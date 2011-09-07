@@ -1,0 +1,96 @@
+<%= form_for @player do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </p>
+  <p>
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </p>
+  <p>
+    <%= f.label :nickname %><br />
+    <%= f.text_field :nickname %>
+  </p>
+  <p>
+    <%= f.label :birth_year %><br />
+    <%= f.text_field :birth_year %>
+  </p>
+  <p>
+    <%= f.label :birth_month %><br />
+    <%= f.text_field :birth_month %>
+  </p>
+  <p>
+    <%= f.label :birth_day %><br />
+    <%= f.text_field :birth_day %>
+  </p>
+  <p>
+    <%= f.label :birth_country %><br />
+    <%= f.text_field :birth_country %>
+  </p>
+  <p>
+    <%= f.label :birth_state %><br />
+    <%= f.text_field :birth_state %>
+  </p>
+  <p>
+    <%= f.label :birth_city %><br />
+    <%= f.text_field :birth_city %>
+  </p>
+  <p>
+    <%= f.label :death_year %><br />
+    <%= f.text_field :death_year %>
+  </p>
+  <p>
+    <%= f.label :death_month %><br />
+    <%= f.text_field :death_month %>
+  </p>
+  <p>
+    <%= f.label :death_day %><br />
+    <%= f.text_field :death_day %>
+  </p>
+  <p>
+    <%= f.label :death_country %><br />
+    <%= f.text_field :death_country %>
+  </p>
+  <p>
+    <%= f.label :death_state %><br />
+    <%= f.text_field :death_state %>
+  </p>
+  <p>
+    <%= f.label :death_city %><br />
+    <%= f.text_field :death_city %>
+  </p>
+  <p>
+    <%= f.label :weight %><br />
+    <%= f.text_field :weight %>
+  </p>
+  <p>
+    <%= f.label :height %><br />
+    <%= f.text_field :height %>
+  </p>
+  <p>
+    <%= f.label :bats %><br />
+    <%= f.text_field :bats %>
+  </p>
+  <p>
+    <%= f.label :throws %><br />
+    <%= f.text_field :throws %>
+  </p>
+  <p>
+    <%= f.label :debut %><br />
+    <%= f.datetime_select :debut %>
+  </p>
+  <p>
+    <%= f.label :final_game %><br />
+    <%= f.datetime_select :final_game %>
+  </p>
+  <p>
+    <%= f.label :college %><br />
+    <%= f.text_field :college %>
+  </p>
+  <p>
+    <%= f.label :hof %><br />
+    <%= f.check_box :hof %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

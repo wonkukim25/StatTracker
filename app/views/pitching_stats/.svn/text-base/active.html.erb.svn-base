@@ -1,0 +1,7 @@
+<% if params[:stat] == 'era' %>
+	<h1><% title params[:stat].upcase + " Active Leaders" %></h1>
+<% else %>
+	<h1><% title params[:stat].titleize + " Active Leaders" %></h1>
+<% end %>
+	<div id = 'chart'></div>
+	<%= raw @table.render('chart') %>

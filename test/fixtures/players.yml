@@ -1,0 +1,49 @@
+one:
+  first_name: MyString
+  last_name: MyString
+  nickname: MyString
+  birth_year: 1
+  birth_month: 1
+  birth_day: 1
+  birth_country: MyString
+  birth_state: MyString
+  birth_city: MyString
+  death_year: 1
+  death_month: 1
+  death_day: 1
+  death_country: MyString
+  death_state: MyString
+  death_city: MyString
+  weight: 1
+  height: 1
+  bats: MyString
+  throws: 1
+  debut: 2011-02-09 19:03:27
+  final_game: 2011-02-09 19:03:27
+  college: MyString
+  hof: false
+
+two:
+  first_name: MyString
+  last_name: MyString
+  nickname: MyString
+  birth_year: 1
+  birth_month: 1
+  birth_day: 1
+  birth_country: MyString
+  birth_state: MyString
+  birth_city: MyString
+  death_year: 1
+  death_month: 1
+  death_day: 1
+  death_country: MyString
+  death_state: MyString
+  death_city: MyString
+  weight: 1
+  height: 1
+  bats: MyString
+  throws: 1
+  debut: 2011-02-09 19:03:27
+  final_game: 2011-02-09 19:03:27
+  college: MyString
+  hof: false

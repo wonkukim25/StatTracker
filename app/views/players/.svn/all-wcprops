@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/348/trunk/StatTracker/app/views/players
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/312/trunk/StatTracker/app/views/players/index.html.erb
+END
+letter.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/222/trunk/StatTracker/app/views/players/letter.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/348/trunk/StatTracker/app/views/players/show.html.erb
+END
+player_search.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/311/trunk/StatTracker/app/views/players/player_search.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/11/trunk/StatTracker/app/views/players/_form.html.erb
+END
+position.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/213/trunk/StatTracker/app/views/players/position.html.erb
+END

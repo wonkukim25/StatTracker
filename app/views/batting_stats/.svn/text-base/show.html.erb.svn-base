@@ -1,0 +1,104 @@
+<% title "Batting Stat" %>
+
+<p>
+  <strong>Player:</strong>
+  <%= @batting_stat.player_id %>
+</p>
+<p>
+  <strong>Team:</strong>
+  <%= @batting_stat.team_id %>
+</p>
+<p>
+  <strong>Stint:</strong>
+  <%= @batting_stat.stint %>
+</p>
+<p>
+  <strong>Games:</strong>
+  <%= @batting_stat.games %>
+</p>
+<p>
+  <strong>Games Batting:</strong>
+  <%= @batting_stat.games_batting %>
+</p>
+<p>
+  <strong>Plate Appearances:</strong>
+  <%= @batting_stat.plate_appearances %>
+</p>
+<p>
+  <strong>At Bats:</strong>
+  <%= @batting_stat.at_bats %>
+</p>
+<p>
+  <strong>Runs:</strong>
+  <%= @batting_stat.runs %>
+</p>
+<p>
+  <strong>Hits:</strong>
+  <%= @batting_stat.hits %>
+</p>
+<p>
+  <strong>Doubles:</strong>
+  <%= @batting_stat.doubles %>
+</p>
+<p>
+  <strong>Triples:</strong>
+  <%= @batting_stat.triples %>
+</p>
+<p>
+  <strong>Home Runs:</strong>
+  <%= @batting_stat.home_runs %>
+</p>
+<p>
+  <strong>Total Bases:</strong>
+  <%= @batting_stat.total_bases %>
+</p>
+<p>
+  <strong>Extra Base Hits:</strong>
+  <%= @batting_stat.extra_base_hits %>
+</p>
+<p>
+  <strong>Rbi:</strong>
+  <%= @batting_stat.rbi %>
+</p>
+<p>
+  <strong>Stolen Bases:</strong>
+  <%= @batting_stat.stolen_bases %>
+</p>
+<p>
+  <strong>Caught Stealing:</strong>
+  <%= @batting_stat.caught_stealing %>
+</p>
+<p>
+  <strong>Walks:</strong>
+  <%= @batting_stat.walks %>
+</p>
+<p>
+  <strong>Strikeouts:</strong>
+  <%= @batting_stat.strikeouts %>
+</p>
+<p>
+  <strong>Intentional Walks:</strong>
+  <%= @batting_stat.intentional_walks %>
+</p>
+<p>
+  <strong>Hit By Pitch:</strong>
+  <%= @batting_stat.hit_by_pitch %>
+</p>
+<p>
+  <strong>Sacrifice Hits:</strong>
+  <%= @batting_stat.sacrifice_hits %>
+</p>
+<p>
+  <strong>Sacrifice Flies:</strong>
+  <%= @batting_stat.sacrifice_flies %>
+</p>
+<p>
+  <strong>Grounded Into Double Plays:</strong>
+  <%= @batting_stat.grounded_into_double_plays %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_batting_stat_path(@batting_stat) %> |
+  <%= link_to "Destroy", @batting_stat, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", batting_stats_path %>
+</p>

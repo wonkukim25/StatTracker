@@ -1,0 +1,85 @@
+<% title "Multi-Season Batting Comparison" %>
+
+You are comparing <%= @strings.join(", ") %>
+<br/>
+<br/>
+
+	<div id = 'table_place'>
+		<%= render :partial => 'table'  %> 
+	</div>
+
+	<br/>
+	
+	<div id = "table_checkbox">
+		<span><p>Check which statistics you want to view in the table</p></span>
+		<%= form_tag change_multi_table_batting_path(:players => @players, :batters => @batters.keys), :remote => true, :id => "change_table" do %>
+			<span title="Games"><%= check_box_tag 'stat[]', 'games', false %>G</span>&nbsp;
+			<span title="Plate Appearances"><%= check_box_tag 'stat[]', 'plate_appearances', false %>PA</span>&nbsp;
+			<span title="At Bats"><%= check_box_tag 'stat[]', 'at_bats', false %>AB</span>&nbsp;
+			<span title="Runs"><%= check_box_tag 'stat[]', 'runs', true %>R</span>&nbsp;
+			<span title="Hits"><%= check_box_tag 'stat[]', 'hits', true %>H</span>&nbsp;
+			<span title="Doubles"><%= check_box_tag 'stat[]', 'doubles', false %>2B</span>&nbsp;
+			<span title="Triples"><%= check_box_tag 'stat[]', 'triples', false %>3B</span>&nbsp;
+			<span title="Home Runs"><%= check_box_tag 'stat[]', 'home_runs', true %>HR</span>&nbsp;
+			<span title="Total Bases"><%= check_box_tag 'stat[]', 'total_bases', false %>TB</span>&nbsp;
+			<span title="Extra Base Hits"><%= check_box_tag 'stat[]', 'extra_base_hits', false %>XBH</span>&nbsp;
+			<br/>
+			<span title="RBI"><%= check_box_tag 'stat[]', 'rbi', true %>RBI</span>&nbsp;
+			<span title="Stolen Bases"><%= check_box_tag 'stat[]', 'stolen_bases', true %>SB</span>&nbsp;
+			<span title="Caught Stealing"><%= check_box_tag 'stat[]', 'caught_stealing', false %>CS</span>&nbsp;
+			<span title="Walks"><%= check_box_tag 'stat[]', 'walks', false %>BB</span>&nbsp;
+			<span title="Strikeouts"><%= check_box_tag 'stat[]', 'strikeouts', false %>K</span>&nbsp;
+			<span title="Intentional Walks"><%= check_box_tag 'stat[]', 'intentional_walks', false %>IBB</span>&nbsp;
+			<span title="Hit by Pitch"><%= check_box_tag 'stat[]', 'hit_by_pitch', false %>HBP</span>&nbsp;
+			<span title="Sacrifice Hits"><%= check_box_tag 'stat[]', 'sacrifice_hits', false %>SAC</span>&nbsp;
+			<span title="Sacrifice Flies"><%= check_box_tag 'stat[]', 'sacrifice_flies', false %>SF</span>&nbsp;
+			<span title="Grounded into Double Plays"><%= check_box_tag 'stat[]', 'grounded_into_double_plays', false %>GIDP</span>&nbsp;
+			<br/>
+			<%= submit_tag 'Update' %>
+		<% end %>
+	</div>
+	
+	<br/>
+	<br/>
+	
+	<div id = 'chart_select'>
+		<span><p>Select a new statistic to change the charts</p></span>
+		<%= form_tag change_multi_chart_batting_path(:players => @players, :batters => @batters.keys, :max => @max, :years => @years), :id => "change_chart", :remote => true do %>
+			<%= select_tag "chart_type", 
+			raw("<option>Home Runs</option>
+			<option>Games</option>
+			<option>Plate Appearances</option>
+			<option>At Bats</option>
+			<option>Runs</option>
+			<option>Hits</option>
+			<option>Doubles</option>
+			<option>Triples</option>
+			<option>Total Bases</option>
+			<option>Extra Base Hits</option>
+			<option>RBI</option>
+			<option>Stolen Bases</option>
+			<option>Caught Stealing</option>
+			<option>Walks</option>
+			<option>Strikeouts</option>
+			<option>Intentional Walks</option>
+			<option>Hit By Pitch</option>
+			<option>Sacrifice Hits</option>
+			<option>Sacrifice Flies</option>
+			<option>Grounded Into Double Plays</option>")
+			%>
+			<%#= submit_tag 'Update' %>
+		<% end %>
+	</div>
+	<br/>
+	
+	<div id = 'chart_place'>
+		<%= render :partial => 'chart'  %> 
+	</div>
+
+        <script type="text/javascript">
+          $('#chart_type').change(function(){
+            $(this).parents('form:first').submit();
+          });
+        </script>
+	
+	

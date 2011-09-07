@@ -1,0 +1,33 @@
+<% title "Fielding Season Finder" %>
+<%= form_tag :controller => :fielding_stats, :action => :find_seasons do |f| %>
+  <% number = 5 %>
+  <%= hidden_field "fields", "count", {:value => number, :id => "count"} %>
+  <% (1..number).each do |i| %>
+      <%= select_tag "#{i}[stat]",
+		raw("<option value = ''>Stat #{i}</option>
+		<option>Games</option>
+                <option>Games Started</option>
+		<option>Innings Out</option>
+		<option>Chances</option>
+		<option>Put Outs</option>
+		<option>Assists</option>
+		<option>Errors Made</option>
+		<option>Double Plays</option>
+		<option>Passed Balls</option>
+		<option>Wild Pitches</option>
+		<option>Stolen Bases</option>
+		<option>Caught Stealing</option>
+		<option>Innings</option>")
+		%>
+      <%= select_tag "#{i}[operator]", options_for_select(%w(= < <= > >=)) %>
+      <%= text_field "#{i}", "number", :size => 5, :placeholder => "Value" %><br />
+  <% end %>
+  Postseason: <%= check_box_tag :postseason %><br />
+  <%= submit_tag "Find Seasons" %>
+<% end %>
+
+	<style>
+#container{
+margin-bottom:-110px;
+}
+</style>

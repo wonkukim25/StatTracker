@@ -1,0 +1,42 @@
+<% title "Pitching Season Finder" %>
+<%= form_tag :controller => :pitching_stats, :action => :find_seasons do |f| %>
+  <% number = 5 %>
+  <%= hidden_field "fields", "count", {:value => number, :id => "count"} %>
+  <% (1..number).each do |i| %>
+      <%= select_tag "#{i}[stat]",
+		raw("<option value = ''>Stat #{i}</option>
+		<option>Wins</option>
+		<option>Losses</option>
+		<option>Games</option>
+		<option>Games Started</option>
+		<option>Complete Games</option>
+		<option>Shutouts</option>
+		<option>Saves</option>
+		<option>Hits</option>
+		<option>Runs</option>
+		<option>Earned Runs</option>
+		<option>Home Runs</option>
+		<option>Walks</option>
+		<option>Strikeouts</option>
+		<option>Intentional Walks</option>
+		<option>Wild Pitches</option>
+		<option>Hit By Pitch</option>
+		<option>Balks</option>
+		<option>Batters Faced</option>
+		<option>Sacrifice Hits</option>
+		<option>Sacrifice Flies</option>
+		<option>Games Finished</option>
+		") %>
+      <%= select_tag "#{i}[operator]", options_for_select(%w(= < <= > >=)) %>
+      <%= text_field "#{i}", "number", :size => 5, :placeholder => "Value" %><br />
+  <% end %>
+  Postseason: <%= check_box_tag :postseason %><br />
+  <%= submit_tag "Find Seasons" %>
+<% end %>
+
+
+	<style>
+#container{
+margin-bottom:-110px;
+}
+</style>

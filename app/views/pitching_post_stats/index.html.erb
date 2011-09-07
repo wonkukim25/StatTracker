@@ -1,0 +1,67 @@
+<% title "Pitching Post Stats" %>
+
+<table>
+  <tr>
+    <th>Player</th>
+    <th>Team</th>
+    <th>Round</th>
+    <th>Wins</th>
+    <th>Losses</th>
+    <th>Games</th>
+    <th>Games Started</th>
+    <th>Complete Games</th>
+    <th>Shutouts</th>
+    <th>Saves</th>
+    <th>Innings Pitched Outs</th>
+    <th>Hits</th>
+    <th>Earned Runs</th>
+    <th>Home Runs</th>
+    <th>Walks</th>
+    <th>Strikeouts</th>
+    <th>Intentional Walks</th>
+    <th>Wild Pitches</th>
+    <th>Hit By Pitch</th>
+    <th>Balks</th>
+    <th>Batters Faced</th>
+    <th>Games Finished</th>
+    <th>Runs</th>
+    <th>Sacrifice Hits</th>
+    <th>Sacrifice Flies</th>
+    <th>Grounded Into Double Plays</th>
+  </tr>
+  <% for pitching_post_stat in @pitching_post_stats %>
+    <tr>
+      <td><%= pitching_post_stat.player_id %></td>
+      <td><%= pitching_post_stat.team_id %></td>
+      <td><%= pitching_post_stat.round %></td>
+      <td><%= pitching_post_stat.wins %></td>
+      <td><%= pitching_post_stat.losses %></td>
+      <td><%= pitching_post_stat.games %></td>
+      <td><%= pitching_post_stat.games_started %></td>
+      <td><%= pitching_post_stat.complete_games %></td>
+      <td><%= pitching_post_stat.shutouts %></td>
+      <td><%= pitching_post_stat.saves %></td>
+      <td><%= pitching_post_stat.innings_pitched_outs %></td>
+      <td><%= pitching_post_stat.hits %></td>
+      <td><%= pitching_post_stat.earned_runs %></td>
+      <td><%= pitching_post_stat.home_runs %></td>
+      <td><%= pitching_post_stat.walks %></td>
+      <td><%= pitching_post_stat.strikeouts %></td>
+      <td><%= pitching_post_stat.intentional_walks %></td>
+      <td><%= pitching_post_stat.wild_pitches %></td>
+      <td><%= pitching_post_stat.hit_by_pitch %></td>
+      <td><%= pitching_post_stat.balks %></td>
+      <td><%= pitching_post_stat.batters_faced %></td>
+      <td><%= pitching_post_stat.games_finished %></td>
+      <td><%= pitching_post_stat.runs %></td>
+      <td><%= pitching_post_stat.sacrifice_hits %></td>
+      <td><%= pitching_post_stat.sacrifice_flies %></td>
+      <td><%= pitching_post_stat.grounded_into_double_plays %></td>
+      <td><%= link_to "Show", pitching_post_stat %></td>
+      <td><%= link_to "Edit", edit_pitching_post_stat_path(pitching_post_stat) %></td>
+      <td><%= link_to "Destroy", pitching_post_stat, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Pitching Post Stat", new_pitching_post_stat_path(pitching_post_stat) %></p>

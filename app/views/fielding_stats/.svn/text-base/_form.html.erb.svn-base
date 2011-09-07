@@ -1,0 +1,72 @@
+<%= form_for @fielding_stat do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :player_id %><br />
+    <%= f.text_field :player_id %>
+  </p>
+  <p>
+    <%= f.label :team_id %><br />
+    <%= f.text_field :team_id %>
+  </p>
+  <p>
+    <%= f.label :stint %><br />
+    <%= f.text_field :stint %>
+  </p>
+  <p>
+    <%= f.label :position %><br />
+    <%= f.text_field :position %>
+  </p>
+  <p>
+    <%= f.label :games %><br />
+    <%= f.text_field :games %>
+  </p>
+  <p>
+    <%= f.label :games_started %><br />
+    <%= f.text_field :games_started %>
+  </p>
+  <p>
+    <%= f.label :inning_outs %><br />
+    <%= f.text_field :inning_outs %>
+  </p>
+  <p>
+    <%= f.label :chances %><br />
+    <%= f.text_field :chances %>
+  </p>
+  <p>
+    <%= f.label :put_outs %><br />
+    <%= f.text_field :put_outs %>
+  </p>
+  <p>
+    <%= f.label :assists %><br />
+    <%= f.text_field :assists %>
+  </p>
+  <p>
+    <%= f.label :errors_made %><br />
+    <%= f.text_field :errors_made %>
+  </p>
+  <p>
+    <%= f.label :double_plays %><br />
+    <%= f.text_field :double_plays %>
+  </p>
+  <p>
+    <%= f.label :passed_balls %><br />
+    <%= f.text_field :passed_balls %>
+  </p>
+  <p>
+    <%= f.label :wild_pitches %><br />
+    <%= f.text_field :wild_pitches %>
+  </p>
+  <p>
+    <%= f.label :stolen_bases %><br />
+    <%= f.text_field :stolen_bases %>
+  </p>
+  <p>
+    <%= f.label :caught_stealing %><br />
+    <%= f.text_field :caught_stealing %>
+  </p>
+  <p>
+    <%= f.label :zone_rating %><br />
+    <%= f.text_field :zone_rating %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

@@ -1,0 +1,79 @@
+<h1> Search Result </h1>
+<% if @players.empty? & @franchises.empty? %>
+<br />
+<h2>No players / teams found</h2>
+<% end %>
+
+<p class="supertiny">&nbsp;</p>
+
+<% unless @players.empty? %>
+	<p><em><strong>Players matching term '<%= @query %>'</strong></em></p>
+	<ul>
+            <table class="datagrid">
+              <thead class="datagrid">
+                  <th width="250">Name</th>
+                  <th width="250">Active</th>
+                  <th>Play Year</th>
+              </thead>
+              <% for player in @players do %>
+
+              <tr class="<%= cycle('dg_list_line_odd', 'dg_list_line_even') %>">
+                  <td align ="center"><%= link_to player.name, player_path(player) %></td>
+                  <td align ="center">
+                      <% if player.final_game.nil? %>
+                          <strong></strong>&#10004
+                      <% end %>
+                      <% if !player.final_game.nil? %>
+                          <strong></strong>&#10008
+                      <% end %>
+                  </td>
+                  <td align ="center">
+                      <% if player.final_game.nil? %>
+                          <%= player.debut.strftime("%Y") %> -
+                      <% end %>
+                      <% if !player.final_game.nil? %>
+                          <%= player.debut.strftime("%Y") %> - <%= player.final_game.strftime("%Y") %>
+                      <% end %>
+                  </td>
+              </tr>
+            <% end %>
+            </table>
+	</ul>
+	<p class="smtext">&nbsp;</p>
+<% end %>
+
+<% unless @franchises.empty? %>
+	<p><em><strong>Teams matching term '<%= @query %>'</strong></em></p>
+	<ul>
+            <table class="datagrid">
+              <thead class="datagrid">
+                  <th width="250">Name</th>
+                  <th width="250">Active</th>
+                  <th>Year</th>
+              </thead>
+              <% for franchise in @franchises do %>
+              <tr class="<%= cycle('dg_list_line_odd', 'dg_list_line_even') %>">
+                  <td align ="center"><%= link_to franchise.name, franchise_path(franchise) %></td>
+                  <td align ="center">
+                      <% if franchise.active %>
+                          <strong></strong>&#10004
+                      <% end %>
+                      <% if !franchise.active %>
+                          <strong></strong>&#10008
+                      <% end %>
+                  </td>
+                  <td align ="center">
+                      <%=  "#{franchise.teams.first.year}" %>-<%=  "#{franchise.teams.last.year}" if !franchise.active? %>
+                  </td>
+              </tr>
+            <% end %>
+            </table>
+	</ul>
+	<p class="smtext">&nbsp;</p>
+<% end %>
+
+	<style>
+#container{
+margin-bottom:-110px;
+}
+</style>

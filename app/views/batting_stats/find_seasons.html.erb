@@ -1,0 +1,4 @@
+<% title "Batting Season Finder" %>
+The search for <b><%= @operations.join(", ").titleize %></b> returned <%= @batting_stats.size %> results:<br /><br />
+<div id='chart'></div>
+<%= raw @chart2.render('chart') %>

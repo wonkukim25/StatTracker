@@ -1,0 +1,42 @@
+<%title 'Franchise Comparison'%>
+	<%= form_tag years_franchises_path, :remote => true, :id => 'years' do %>
+		<table>
+		<tr>
+		<td>
+		<div id = "franchises">
+			<table>
+				<div id = 'text1'><%= text_field_tag 'franchises[]', '', :size => 32, :placeholder => "Start typing a team's name...", :autocomplete => home_autocomplete_franchise_name_path%></div>
+				<div id = 'text2'><%= text_field_tag 'franchises[]', '', :size => 32, :autocomplete => home_autocomplete_franchise_name_path%></div>
+				<div id = 'text3'><%= text_field_tag 'franchises[]', '', :size => 32, :autocomplete => home_autocomplete_franchise_name_path%></div>
+				<div id = 'text4'><%= text_field_tag 'franchises[]', '', :size => 32, :autocomplete => home_autocomplete_franchise_name_path%></div>
+				<div id = 'text5'><%= text_field_tag 'franchises[]', '', :size => 32, :autocomplete => home_autocomplete_franchise_name_path%></div>
+			</table>
+		</div>
+                        <br/>
+			Franchise<%= radio_button_tag 'type', 'career' %>
+			<br/>
+			Season<%= radio_button_tag 'type', 'season' %>
+			<br/>
+			Multi-Year<%= radio_button_tag 'type', 'multi' %>
+			<br/>
+			<br/>
+			<%#= submit_tag 'Compare' %>
+		</td>
+	<% end %>	
+
+		<td class = 'years' >
+			<div id = 'years_place'>
+			</div>	
+		</td>
+	</tr>
+</table>
+<script type="text/javascript">
+  $('input[name="type"]').change(function(){
+    $(this).parents('form:first').submit();
+  });
+  $('input[name="franchises[]"]').live('keyup focusout', function(){
+    if ($('input[name="type"]:checked').val() != null)
+      $('input[name="type"]').parents('form:first').submit();
+  });
+</script>
+

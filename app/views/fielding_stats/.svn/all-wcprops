@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/315/trunk/StatTracker/app/views/fielding_stats
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/11/trunk/StatTracker/app/views/fielding_stats/index.html.erb
+END
+single_season.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/75/trunk/StatTracker/app/views/fielding_stats/single_season.html.erb
+END
+active.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/75/trunk/StatTracker/app/views/fielding_stats/active.html.erb
+END
+find_seasons.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/212/trunk/StatTracker/app/views/fielding_stats/find_seasons.html.erb
+END
+season_finder.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/315/trunk/StatTracker/app/views/fielding_stats/season_finder.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/11/trunk/StatTracker/app/views/fielding_stats/show.html.erb
+END
+career.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/75/trunk/StatTracker/app/views/fielding_stats/career.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/11/trunk/StatTracker/app/views/fielding_stats/_form.html.erb
+END

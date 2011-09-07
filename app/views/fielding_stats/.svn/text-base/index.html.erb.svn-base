@@ -1,0 +1,49 @@
+<% title "Fielding Stats" %>
+
+<table>
+  <tr>
+    <th>Player</th>
+    <th>Team</th>
+    <th>Stint</th>
+    <th>Position</th>
+    <th>Games</th>
+    <th>Games Started</th>
+    <th>Inning Outs</th>
+    <th>Chances</th>
+    <th>Put Outs</th>
+    <th>Assists</th>
+    <th>Errors Made</th>
+    <th>Double Plays</th>
+    <th>Passed Balls</th>
+    <th>Wild Pitches</th>
+    <th>Stolen Bases</th>
+    <th>Caught Stealing</th>
+    <th>Zone Rating</th>
+  </tr>
+  <% for fielding_stat in @fielding_stats %>
+    <tr>
+      <td><%= fielding_stat.player_id %></td>
+      <td><%= fielding_stat.team_id %></td>
+      <td><%= fielding_stat.stint %></td>
+      <td><%= fielding_stat.position %></td>
+      <td><%= fielding_stat.games %></td>
+      <td><%= fielding_stat.games_started %></td>
+      <td><%= fielding_stat.inning_outs %></td>
+      <td><%= fielding_stat.chances %></td>
+      <td><%= fielding_stat.put_outs %></td>
+      <td><%= fielding_stat.assists %></td>
+      <td><%= fielding_stat.errors_made %></td>
+      <td><%= fielding_stat.double_plays %></td>
+      <td><%= fielding_stat.passed_balls %></td>
+      <td><%= fielding_stat.wild_pitches %></td>
+      <td><%= fielding_stat.stolen_bases %></td>
+      <td><%= fielding_stat.caught_stealing %></td>
+      <td><%= fielding_stat.zone_rating %></td>
+      <td><%= link_to "Show", fielding_stat %></td>
+      <td><%= link_to "Edit", edit_fielding_stat_path(fielding_stat) %></td>
+      <td><%= link_to "Destroy", fielding_stat, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Fielding Stat", new_fielding_stat_path(fielding_stat) %></p>

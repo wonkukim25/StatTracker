@@ -1,0 +1,7 @@
+<% if params[:stat] == 'rbi' %>
+	<h1><% title params[:stat].upcase + " Career Leaders" %></h1>
+<% else %>
+	<h1><% title params[:stat].titleize + " Career Leaders" %></h1>
+<% end %>
+	<div id = 'chart'></div>
+	<%= raw @table.render('chart') %>

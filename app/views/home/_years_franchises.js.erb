@@ -1,0 +1,16 @@
+<%= form_tag compare_franchises_path(:type => @type, :franchises => @franchise_ids) do %>
+			<% if @type == 'multi' or @type == 'season' %>
+				<% for year in @years_array %>
+	
+						<%= select_tag 'years[]', options_for_select(year), :class => 'years_select' %>
+						<% if @type == 'multi' %>
+							to
+							<%= select_tag 'years[]', options_for_select(year), :class => 'years_select'  %>
+						<% end %>
+						<br/>
+				<% end %>
+			<% end %>
+		<br/>
+		<%= submit_tag 'Compare' %>
+	<% end %>
+		

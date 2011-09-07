@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/51/trunk/StatTracker/test/fixtures
+END
+fielding_stats.yml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/11/trunk/StatTracker/test/fixtures/fielding_stats.yml
+END
+players.yml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/11/trunk/StatTracker/test/fixtures/players.yml
+END
+users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/51/trunk/StatTracker/test/fixtures/users.yml
+END
+pitching_stats.yml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/11/trunk/StatTracker/test/fixtures/pitching_stats.yml
+END
+fielding_post_stats.yml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/11/trunk/StatTracker/test/fixtures/fielding_post_stats.yml
+END
+leagues.yml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/11/trunk/StatTracker/test/fixtures/leagues.yml
+END
+franchises.yml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/11/trunk/StatTracker/test/fixtures/franchises.yml
+END
+batting_stats.yml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/11/trunk/StatTracker/test/fixtures/batting_stats.yml
+END
+divisions.yml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/11/trunk/StatTracker/test/fixtures/divisions.yml
+END
+pitching_post_stats.yml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/11/trunk/StatTracker/test/fixtures/pitching_post_stats.yml
+END
+teams.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/11/trunk/StatTracker/test/fixtures/teams.yml
+END
+batting_post_stats.yml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/11/trunk/StatTracker/test/fixtures/batting_post_stats.yml
+END

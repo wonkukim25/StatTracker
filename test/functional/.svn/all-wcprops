@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/51/trunk/StatTracker/test/functional
+END
+batting_post_stats_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/11/trunk/StatTracker/test/functional/batting_post_stats_controller_test.rb
+END
+user_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/51/trunk/StatTracker/test/functional/user_controller_test.rb
+END
+fielding_stats_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/11/trunk/StatTracker/test/functional/fielding_stats_controller_test.rb
+END
+players_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/11/trunk/StatTracker/test/functional/players_controller_test.rb
+END
+pitching_stats_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/11/trunk/StatTracker/test/functional/pitching_stats_controller_test.rb
+END
+fielding_post_stats_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/11/trunk/StatTracker/test/functional/fielding_post_stats_controller_test.rb
+END
+franchises_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/11/trunk/StatTracker/test/functional/franchises_controller_test.rb
+END
+leagues_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/11/trunk/StatTracker/test/functional/leagues_controller_test.rb
+END
+batting_stats_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/11/trunk/StatTracker/test/functional/batting_stats_controller_test.rb
+END
+divisions_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/11/trunk/StatTracker/test/functional/divisions_controller_test.rb
+END
+pitching_post_stats_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/11/trunk/StatTracker/test/functional/pitching_post_stats_controller_test.rb
+END
+home_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/51/trunk/StatTracker/test/functional/home_controller_test.rb
+END
+teams_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/11/trunk/StatTracker/test/functional/teams_controller_test.rb
+END

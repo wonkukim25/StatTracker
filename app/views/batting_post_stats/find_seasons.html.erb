@@ -1,0 +1,25 @@
+<% title "Batting Season Finder" %>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Team</th>
+      <th>Year</th>
+      <% @stats.each do |i| %>
+      <th><%= i.titleize %></th>
+      <% end %>
+    </tr>
+  </thead>
+  <tbody>
+    <% @batting_stats.each do |stat| %>
+    <tr>
+      <td><%= stat.player.name %></td>
+      <td><%= stat.team.name %></td>
+      <td><%= stat.year %></td>
+      <% @stats.each do |i| %>
+      <td><%= stat.send(i) %></td>
+      <% end %>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

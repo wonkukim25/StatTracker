@@ -1,0 +1,19 @@
+<% title "Divisions" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>League</th>
+  </tr>
+  <% for division in @divisions %>
+    <tr>
+      <td><%= division.name %></td>
+      <td><%= division.league_id %></td>
+      <td><%= link_to "Show", division %></td>
+      <td><%= link_to "Edit", edit_division_path(division) %></td>
+      <td><%= link_to "Destroy", division, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Division", new_division_path(division) %></p>

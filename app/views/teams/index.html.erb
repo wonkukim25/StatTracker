@@ -1,0 +1,107 @@
+<% title "Teams" %>
+
+<table>
+  <tr>
+    <th>Franchise</th>
+    <th>Division</th>
+    <th>Year</th>
+    <th>Baseball Era</th>
+    <th>Name</th>
+    <th>Park</th>
+    <th>Attendance</th>
+    <th>Rank</th>
+    <th>Games</th>
+    <th>Home Games</th>
+    <th>Wins</th>
+    <th>Losses</th>
+    <th>Div Win</th>
+    <th>Wc Win</th>
+    <th>Lg Win</th>
+    <th>Ws Win</th>
+    <th>Runs</th>
+    <th>Plate Appearances</th>
+    <th>At Bats</th>
+    <th>Hits</th>
+    <th>Doubles</th>
+    <th>Triples</th>
+    <th>Home Runs</th>
+    <th>Total Bases</th>
+    <th>Extra Base Hits</th>
+    <th>Walks</th>
+    <th>Strikeouts</th>
+    <th>Stolen Bases</th>
+    <th>Caught Stealing</th>
+    <th>Hit By Pitch</th>
+    <th>Sacrifice Flies</th>
+    <th>Runs Allowed</th>
+    <th>Earned Runs</th>
+    <th>Complete Games</th>
+    <th>Shutouts</th>
+    <th>Saves</th>
+    <th>Innings Pitched Outs</th>
+    <th>Hits Allowed</th>
+    <th>Home Runs Allowed</th>
+    <th>Walks Allowed</th>
+    <th>Strikeouts Allowed</th>
+    <th>Errors Made</th>
+    <th>Double Plays</th>
+    <th>Fielding Percentage</th>
+    <th>Batters Park Factor</th>
+    <th>Pitchers Park Factor</th>
+  </tr>
+  <% for team in @teams %>
+    <tr>
+      <td><%= team.franchise_id %></td>
+      <td><%= team.division_id %></td>
+      <td><%= team.year %></td>
+      <td><%= team.baseball_era %></td>
+      <td><%= team.name %></td>
+      <td><%= team.park %></td>
+      <td><%= team.attendance %></td>
+      <td><%= team.rank %></td>
+      <td><%= team.games %></td>
+      <td><%= team.home_games %></td>
+      <td><%= team.wins %></td>
+      <td><%= team.losses %></td>
+      <td><%= team.div_win %></td>
+      <td><%= team.wc_win %></td>
+      <td><%= team.lg_win %></td>
+      <td><%= team.ws_win %></td>
+      <td><%= team.runs %></td>
+      <td><%= team.plate_appearances %></td>
+      <td><%= team.at_bats %></td>
+      <td><%= team.hits %></td>
+      <td><%= team.doubles %></td>
+      <td><%= team.triples %></td>
+      <td><%= team.home_runs %></td>
+      <td><%= team.total_bases %></td>
+      <td><%= team.extra_base_hits %></td>
+      <td><%= team.walks %></td>
+      <td><%= team.strikeouts %></td>
+      <td><%= team.stolen_bases %></td>
+      <td><%= team.caught_stealing %></td>
+      <td><%= team.hit_by_pitch %></td>
+      <td><%= team.sacrifice_flies %></td>
+      <td><%= team.runs_allowed %></td>
+      <td><%= team.earned_runs %></td>
+      <td><%= team.complete_games %></td>
+      <td><%= team.shutouts %></td>
+      <td><%= team.saves %></td>
+      <td><%= team.innings_pitched_outs %></td>
+      <td><%= team.hits_allowed %></td>
+      <td><%= team.home_runs_allowed %></td>
+      <td><%= team.walks_allowed %></td>
+      <td><%= team.strikeouts_allowed %></td>
+      <td><%= team.errors_made %></td>
+      <td><%= team.double_plays %></td>
+      <td><%= team.fielding_percentage %></td>
+      <td><%= team.batters_park_factor %></td>
+      <td><%= team.pitchers_park_factor %></td>
+      <td><%= link_to "Show", team %></td>
+      <td><%= link_to "Edit", edit_team_path(team) %></td>
+      <td><%= link_to "Destroy", team, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Team", new_team_path(team) %></p>

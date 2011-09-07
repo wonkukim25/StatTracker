@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/314/trunk/StatTracker/app/models
+END
+google_image.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/125/trunk/StatTracker/app/models/google_image.rb
+END
+pitching_stat.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/306/trunk/StatTracker/app/models/pitching_stat.rb
+END
+fielding_post_stat.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/215/trunk/StatTracker/app/models/fielding_post_stat.rb
+END
+league.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/223/trunk/StatTracker/app/models/league.rb
+END
+franchise.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/310/trunk/StatTracker/app/models/franchise.rb
+END
+batting_stat.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/306/trunk/StatTracker/app/models/batting_stat.rb
+END
+division.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/12/trunk/StatTracker/app/models/division.rb
+END
+pitching_post_stat.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/306/trunk/StatTracker/app/models/pitching_post_stat.rb
+END
+team.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/258/trunk/StatTracker/app/models/team.rb
+END
+batting_post_stat.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/306/trunk/StatTracker/app/models/batting_post_stat.rb
+END
+player.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/314/trunk/StatTracker/app/models/player.rb
+END
+fielding_stat.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/215/trunk/StatTracker/app/models/fielding_stat.rb
+END

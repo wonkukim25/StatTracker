@@ -1,0 +1,16 @@
+<% title "League" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @league.name %>
+</p>
+<p>
+  <strong>Active:</strong>
+  <%= @league.active %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_league_path(@league) %> |
+  <%= link_to "Destroy", @league, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", leagues_path %>
+</p>

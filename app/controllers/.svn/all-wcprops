@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/349/trunk/StatTracker/app/controllers
+END
+batting_post_stats_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/204/trunk/StatTracker/app/controllers/batting_post_stats_controller.rb
+END
+fielding_stats_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/349/trunk/StatTracker/app/controllers/fielding_stats_controller.rb
+END
+players_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/348/trunk/StatTracker/app/controllers/players_controller.rb
+END
+application_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/11/trunk/StatTracker/app/controllers/application_controller.rb
+END
+pitching_stats_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/349/trunk/StatTracker/app/controllers/pitching_stats_controller.rb
+END
+fielding_post_stats_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/347/trunk/StatTracker/app/controllers/fielding_post_stats_controller.rb
+END
+leagues_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/155/trunk/StatTracker/app/controllers/leagues_controller.rb
+END
+franchises_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/344/trunk/StatTracker/app/controllers/franchises_controller.rb
+END
+search_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/118/trunk/StatTracker/app/controllers/search_controller.rb
+END
+batting_stats_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/349/trunk/StatTracker/app/controllers/batting_stats_controller.rb
+END
+divisions_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/155/trunk/StatTracker/app/controllers/divisions_controller.rb
+END
+pitching_post_stats_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/215/trunk/StatTracker/app/controllers/pitching_post_stats_controller.rb
+END
+home_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/303/trunk/StatTracker/app/controllers/home_controller.rb
+END
+teams_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/344/trunk/StatTracker/app/controllers/teams_controller.rb
+END

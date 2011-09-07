@@ -1,0 +1,11 @@
+<% title "Postseason Pitching Season Finder" %>
+<%= form_tag :controller => :batting_stats, :action => :find_seasons do |f| %>
+  <% number = 5 %>
+  <%= hidden_field "fields", "count", {:value => number, :id => "count"} %>
+  <% (1..number).each do |i| %>
+      <%= select_tag "#{i}[stat]", options_for_select(PitchingPostStat.accessible_attributes), :include_blank => true %>
+      <%= select_tag "#{i}[operator]", options_for_select(%w(= < <= > >=)) %>
+      <%= text_field "#{i}", "number", :size => 5 %><br />
+  <% end %>
+  <%= submit_tag "Find Seasons" %>
+<% end %>

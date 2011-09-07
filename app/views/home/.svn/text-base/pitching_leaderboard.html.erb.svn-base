@@ -1,0 +1,61 @@
+<h1> Pitching Leaderboards</h1>
+
+<table>
+<tr>
+<td>
+	<%= form_tag (pitching_leaders_path) do %>
+			<%= select_tag "stat", 
+			raw("<option>Games</option>
+			<option>Win Loss Percentage</option>
+			<option>Innings Pitched</option>
+			<option>ERA</option>
+			<option>Opponents Batting Average</option>
+			<option>Walks and Hits Innings Pitched</option>
+			<option>Hits per 9 Innings</option>
+			<option>Home Runs per 9 Innings</option>
+			<option>Walks per 9 Innings</option>
+			<option>Strikeouts per 9 Innings</option>
+			<option>Strikeouts per Walk</option>
+			<option>Wins</option>
+			<option>Losses</option>
+			<option>Games Started</option>
+			<option>Complete Games</option>
+			<option>Shutouts</option>
+			<option>Saves</option>
+			<option>Hits</option>
+			<option>Earned Runs</option>
+			<option>Home Runs</option>
+			<option>Walks</option>
+			<option>Strikeouts</option>
+			<option>Intentional Walks</option>
+			<option>Wild Pitches</option>
+			<option>Hit By Pitch</option>
+			<option>Balks</option>
+			<option>Batters Faced</option>
+			<option>Games Finished</option>
+			<option>Runs</option>
+			")
+			%>
+</td>
+<td>
+		<%= radio_button_tag 'type', 'season', true %>Season
+		<%= radio_button_tag 'type', 'career' %>Career
+		<%= radio_button_tag 'type', 'active' %>Active
+</td>
+<td>
+		<%= submit_tag 'Submit' %>
+</td>
+</tr>
+<tr>
+<td></td>
+<td><%= check_box_tag 'post', 'post', false %>Postseason</td>
+</tr>
+</table>
+	<% end %>
+	
+		<style>
+#container{
+margin-bottom:-110px;
+}
+</style>
+	

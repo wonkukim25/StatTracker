@@ -1,0 +1,241 @@
+<% if !@player.nickname.nil? %>
+<h1><%=@player.first_name+" \""+@player.nickname+"\" "+@player.last_name%></h1>
+<% end %>
+<% if @player.nickname.nil? %>
+<h1><%=@player.name%></h1>
+<% end %>
+<%= image_tag(@google_image.original,:style => 'padding:3px; border:solid 1px #EEE; margin:2px; width:200px; height:auto; position:absolute; right:180px;') unless @google_image.nil? %>
+<div class="player">
+</div>
+<div id="text" style="margin-bottom:80px;">
+<%if !@player.birthPlace.nil? %>
+<ul>
+  <strong>Place of Birth:</strong>
+  <%= @player.birthPlace %>
+</ul>
+<% end %>
+<% if !@player.birthday.nil?%>
+<ul>
+  <strong>Birth Date:</strong>
+  <%= @player.birthday %>
+</ul>
+<% end %>
+<% if !@player.death_year.nil? %>
+<ul>
+  <strong>Death Date:</strong>
+  <%=@player.death_month.to_s+"\/"+@player.death_day.to_s+"\/"+@player.death_year.to_s %>
+</ul>
+<% end %>
+<%if !@player.height.nil?%>
+<ul>
+ <strong>Height:</strong>
+  <%= @player.heightFeet %>
+</ul>
+<% end %>
+<%if !@player.weight.nil?%>
+<ul>
+  <strong>Weight:</strong>
+  <%= @player.weight.to_s+" lbs" %>
+</ul>
+<% end %>
+<%if !@player.bats.nil?%>
+<ul>
+  <strong>Bats:</strong>
+  <%= @player.bats %>
+</ul>
+<% end %>
+<%if !@player.throws.nil?%>
+<ul>
+  <strong>Throws:</strong>
+  <%= @player.throws %>
+</ul>
+<% end %>
+<% if !@player.debut.nil?%>
+<ul>
+  <strong>Debut:</strong>
+  <%= @player.debut.strftime("%m/%d/%Y") %>
+</ul>
+<%end%>
+<% if !@player.final_game.nil?%>
+<ul>
+  <strong>Final Game:</strong>
+  <%= @player.final_game.strftime("%m/%d/%Y") %>
+</ul>
+<%end%>
+<% if !@player.college.nil?%>
+<ul>
+  <strong>College:</strong>
+  <%= @player.college %>
+</ul>
+<% end %>
+<% if @player.hof %>
+<ul>
+  <strong>Hall of Famer: </strong>&#10004
+</ul>
+<% end %>
+</div>
+<% if !(@position == 'P') %>
+	<% if !@batting_stats.empty? %>	
+		<strong>Regular Season Batting Stats </strong><span title="Hover over numbers or click on glossary tab to learn more"><%= image_tag("question.gif")%></span>
+		<br/>
+		
+		<div id = 'batting_simple'>
+			<div id='chart5'></div>
+			<%= raw @chart5.render('chart5') %>
+		</div>
+		
+		<div id = 'batting_advanced'>
+			<div id='chart'></div>
+			<%= raw @chart.render('chart') %>
+		</div>
+		<br/>
+		<%= submit_tag "View Advanced Stats", :id => "batting_advanced_button" %>
+		<%= submit_tag "View Simple Stats", :id => "batting_simple_button" %>
+		<br/>
+		
+	<% end %>
+		<br/>
+		<% if !@batting_stats_post.empty? %>
+		<strong>Post Season Batting Stats </strong><span title="Hover over numbers or click on glossary tab to learn more"><%= image_tag("question.gif")%></span>
+		<br/>
+		
+		<div id = 'batting_post_simple'>
+			<div id='chart6'></div>
+			<%= raw @chart6.render('chart6') %>
+		</div>
+		
+		<div id = 'batting_post_advanced'>
+			<div id='chart2'></div>
+			<%= raw @chart2.render('chart2') %>
+		</div>
+		
+		<br/>
+		<%= submit_tag "View Advanced Stats", :id => "batting_post_advanced_button" %>
+		<%= submit_tag "View Simple Stats", :id => "batting_post_simple_button" %>
+		<br/>
+		
+	<% end %>
+	<br/>
+	<% if !@pitching_stats.empty? %>
+		<strong>Regular Season Pitching Stats </strong><span title="Hover over numbers or click on glossary tab to learn more"><%= image_tag("question.gif")%></span>
+		<br/>
+		
+		<div id = 'pitching_simple'>
+			<div id='chart7'></div>
+			<%= raw @chart7.render('chart7') %>
+		</div>
+		
+		<div id = 'pitching_advanced'>
+			<div id='chart3'></div>
+			<%= raw @chart3.render('chart3') %>
+		</div>
+		
+		<br/>
+		<%= submit_tag "View Advanced Stats", :id => "pitching_advanced_button" %>
+		<%= submit_tag "View Simple Stats", :id => "pitching_simple_button" %>
+		<br/>
+		
+	<% end %>
+	<br/>
+	<% if !@pitching_stats_post.empty? %>
+		<strong>Post Season Pitching Stats </strong><span title="Hover over numbers or click on glossary tab to learn more"><%= image_tag("question.gif")%></span>
+		<br/>
+		
+		<div id = 'pitching_post_simple'>
+			<div id='chart8'></div>
+			<%= raw @chart8.render('chart8') %>
+		</div>
+		
+		<div id = 'pitching_post_advanced'>
+			<div id='chart4'></div>
+			<%= raw @chart4.render('chart4') %>
+		</div>
+		
+		<br/>
+		<%= submit_tag "View Advanced Stats", :id => "pitching_post_advanced_button" %>
+		<%= submit_tag "View Simple Stats", :id => "pitching_post_simple_button" %>
+		<br/>
+		
+	<% end %>
+	
+	<% else %>
+	
+	<% if !@pitching_stats.empty? %>
+		<strong>Regular Season Pitching Stats </strong><span title="Hover over numbers or click on glossary tab to learn more"><%= image_tag("question.gif")%></span>
+		<br/>
+		
+		<div id = 'pitching_simple'>
+			<div id='chart7'></div>
+			<%= raw @chart7.render('chart7') %>
+		</div>
+		
+		<div id = 'pitching_advanced'>
+			<div id='chart3'></div>
+			<%= raw @chart3.render('chart3') %>
+		</div>
+		
+		<br/>
+		<%= submit_tag "View Advanced Stats", :id => "pitching_advanced_button" %>
+		<%= submit_tag "View Simple Stats", :id => "pitching_simple_button" %>
+		<br/>
+	<% end %>
+	<br/>
+	<% if !@pitching_stats_post.empty? %>
+		<strong>Post Season Pitching Stats </strong><span title="Hover over numbers or click on glossary tab to learn more"><%= image_tag("question.gif")%></span>
+		<br/>
+		
+		<div id = 'pitching_post_simple'>
+			<div id='chart8'></div>
+			<%= raw @chart8.render('chart8') %>
+		</div>
+		
+		<div id = 'pitching_post_advanced'>
+			<div id='chart4'></div>
+			<%= raw @chart4.render('chart4') %>
+		</div>
+		
+		<br/>
+		<%= submit_tag "View Advanced Stats", :id => "pitching_post_advanced_button" %>
+		<%= submit_tag "View Simple Stats", :id => "pitching_post_simple_button" %>
+		<br/>
+	<% end %>
+	<br/>
+	<% if !@batting_stats.empty? %>
+		<strong>Regular Season Batting Stats </strong><span title="Hover over numbers or click on glossary tab to learn more"><%= image_tag("question.gif")%></span>
+		<br/>
+		
+		<div id = 'batting_simple'>
+			<div id='chart5'></div>
+			<%= raw @chart5.render('chart5') %>
+		</div>
+		
+		<div id = 'batting_advanced'>
+			<div id='chart'></div>
+			<%= raw @chart.render('chart') %>
+		</div>
+		<br/>
+		<%= submit_tag "View Advanced Stats", :id => "batting_advanced_button" %>
+		<%= submit_tag "View Simple Stats", :id => "batting_simple_button" %>
+		<br/>
+	<% end %>
+		<br/>
+		<% if !@batting_stats_post.empty? %>
+		<strong>Post Season Batting Stats </strong><span title="Hover over numbers or click on glossary tab to learn more"><%= image_tag("question.gif")%></span>
+		<br/>
+		
+		<div id = 'batting_post_simple'>
+			<div id='chart6'></div>
+			<%= raw @chart6.render('chart6') %>
+		</div>
+		
+		<div id = 'batting_post_advanced'>
+			<div id='chart2'></div>
+			<%= raw @chart2.render('chart2') %>
+		</div>
+		
+		<br/>
+		<%= submit_tag "View Advanced Stats", :id => "batting_post_advanced_button" %>
+		<%= submit_tag "View Simple Stats", :id => "batting_post_simple_button" %>
+		<br/>
+	<% end %>
+<% end %>

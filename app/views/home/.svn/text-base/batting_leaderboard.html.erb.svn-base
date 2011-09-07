@@ -1,0 +1,54 @@
+<h1> Batting Leaderboards </h1>
+ 
+<table>
+<tr>
+<td> 
+<%= form_tag (batting_leaders_path) do %>
+		<%= select_tag "stat", 
+		raw("<option>Games</option>
+		<option>Plate Appearances</option>
+		<option>At Bats</option>
+		<option>Runs</option>
+		<option>Hits</option>
+		<option>Doubles</option>
+		<option>Triples</option>
+		<option>Home Runs</option>
+		<option>Total Bases</option>
+		<option>Extra Base Hits</option>
+		<option>RBI</option>
+		<option>Stolen Bases</option>
+		<option>Caught Stealing</option>
+		<option>Walks</option>
+		<option>Strikeouts</option>
+		<option>Intentional Walks</option>
+		<option>Hit By Pitch</option>
+		<option>Sacrifice Hits</option>
+		<option>Sacrifice Flies</option>
+		<option>Grounded Into Double Plays</option>
+		<option>Batting Average</option>
+		<option>On Base Percentage</option>
+		<option>Slugging Percentage</option>
+		<option>On Base Plus Slugging</options>") %>
+</td>
+<td>
+		<%= radio_button_tag 'type', 'season', true %>Season
+		<%= radio_button_tag 'type', 'career' %>Career
+		<%= radio_button_tag 'type', 'active' %>Active
+</td>
+<td>
+		<%= submit_tag 'Submit' %>
+</td>
+</tr>
+<tr>
+<td></td>
+<td><%= check_box_tag 'post', 'post', false %>Postseason</td>
+</tr>
+</table>
+	<% end %>
+	
+		<style>
+#container{
+margin-bottom:-110px;
+}
+</style>
+	

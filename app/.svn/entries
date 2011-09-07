@@ -1,0 +1,43 @@
+10
+
+dir
+349
+https://stattracker.googlecode.com/svn/trunk/StatTracker/app
+https://stattracker.googlecode.com/svn
+
+
+
+2011-04-27T20:15:01.545260Z
+349
+chris.lebowitz@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+17ca8119-205c-cd62-ded4-31256c700473
+
+helpers
+dir
+
+models
+dir
+
+controllers
+dir
+
+mailers
+dir
+
+views
+dir
+

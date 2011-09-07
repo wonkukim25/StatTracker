@@ -1,0 +1,188 @@
+<%= form_for @team do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :franchise_id %><br />
+    <%= f.text_field :franchise_id %>
+  </p>
+  <p>
+    <%= f.label :division_id %><br />
+    <%= f.text_field :division_id %>
+  </p>
+  <p>
+    <%= f.label :year %><br />
+    <%= f.text_field :year %>
+  </p>
+  <p>
+    <%= f.label :baseball_era %><br />
+    <%= f.text_field :baseball_era %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :park %><br />
+    <%= f.text_field :park %>
+  </p>
+  <p>
+    <%= f.label :attendance %><br />
+    <%= f.text_field :attendance %>
+  </p>
+  <p>
+    <%= f.label :rank %><br />
+    <%= f.text_field :rank %>
+  </p>
+  <p>
+    <%= f.label :games %><br />
+    <%= f.text_field :games %>
+  </p>
+  <p>
+    <%= f.label :home_games %><br />
+    <%= f.text_field :home_games %>
+  </p>
+  <p>
+    <%= f.label :wins %><br />
+    <%= f.text_field :wins %>
+  </p>
+  <p>
+    <%= f.label :losses %><br />
+    <%= f.text_field :losses %>
+  </p>
+  <p>
+    <%= f.label :div_win %><br />
+    <%= f.check_box :div_win %>
+  </p>
+  <p>
+    <%= f.label :wc_win %><br />
+    <%= f.check_box :wc_win %>
+  </p>
+  <p>
+    <%= f.label :lg_win %><br />
+    <%= f.check_box :lg_win %>
+  </p>
+  <p>
+    <%= f.label :ws_win %><br />
+    <%= f.check_box :ws_win %>
+  </p>
+  <p>
+    <%= f.label :runs %><br />
+    <%= f.text_field :runs %>
+  </p>
+  <p>
+    <%= f.label :plate_appearances %><br />
+    <%= f.text_field :plate_appearances %>
+  </p>
+  <p>
+    <%= f.label :at_bats %><br />
+    <%= f.text_field :at_bats %>
+  </p>
+  <p>
+    <%= f.label :hits %><br />
+    <%= f.text_field :hits %>
+  </p>
+  <p>
+    <%= f.label :doubles %><br />
+    <%= f.text_field :doubles %>
+  </p>
+  <p>
+    <%= f.label :triples %><br />
+    <%= f.text_field :triples %>
+  </p>
+  <p>
+    <%= f.label :home_runs %><br />
+    <%= f.text_field :home_runs %>
+  </p>
+  <p>
+    <%= f.label :total_bases %><br />
+    <%= f.text_field :total_bases %>
+  </p>
+  <p>
+    <%= f.label :extra_base_hits %><br />
+    <%= f.text_field :extra_base_hits %>
+  </p>
+  <p>
+    <%= f.label :walks %><br />
+    <%= f.text_field :walks %>
+  </p>
+  <p>
+    <%= f.label :strikeouts %><br />
+    <%= f.text_field :strikeouts %>
+  </p>
+  <p>
+    <%= f.label :stolen_bases %><br />
+    <%= f.text_field :stolen_bases %>
+  </p>
+  <p>
+    <%= f.label :caught_stealing %><br />
+    <%= f.text_field :caught_stealing %>
+  </p>
+  <p>
+    <%= f.label :hit_by_pitch %><br />
+    <%= f.text_field :hit_by_pitch %>
+  </p>
+  <p>
+    <%= f.label :sacrifice_flies %><br />
+    <%= f.text_field :sacrifice_flies %>
+  </p>
+  <p>
+    <%= f.label :runs_allowed %><br />
+    <%= f.text_field :runs_allowed %>
+  </p>
+  <p>
+    <%= f.label :earned_runs %><br />
+    <%= f.text_field :earned_runs %>
+  </p>
+  <p>
+    <%= f.label :complete_games %><br />
+    <%= f.text_field :complete_games %>
+  </p>
+  <p>
+    <%= f.label :shutouts %><br />
+    <%= f.text_field :shutouts %>
+  </p>
+  <p>
+    <%= f.label :saves %><br />
+    <%= f.text_field :saves %>
+  </p>
+  <p>
+    <%= f.label :innings_pitched_outs %><br />
+    <%= f.text_field :innings_pitched_outs %>
+  </p>
+  <p>
+    <%= f.label :hits_allowed %><br />
+    <%= f.text_field :hits_allowed %>
+  </p>
+  <p>
+    <%= f.label :home_runs_allowed %><br />
+    <%= f.text_field :home_runs_allowed %>
+  </p>
+  <p>
+    <%= f.label :walks_allowed %><br />
+    <%= f.text_field :walks_allowed %>
+  </p>
+  <p>
+    <%= f.label :strikeouts_allowed %><br />
+    <%= f.text_field :strikeouts_allowed %>
+  </p>
+  <p>
+    <%= f.label :errors_made %><br />
+    <%= f.text_field :errors_made %>
+  </p>
+  <p>
+    <%= f.label :double_plays %><br />
+    <%= f.text_field :double_plays %>
+  </p>
+  <p>
+    <%= f.label :fielding_percentage %><br />
+    <%= f.text_field :fielding_percentage %>
+  </p>
+  <p>
+    <%= f.label :batters_park_factor %><br />
+    <%= f.text_field :batters_park_factor %>
+  </p>
+  <p>
+    <%= f.label :pitchers_park_factor %><br />
+    <%= f.text_field :pitchers_park_factor %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

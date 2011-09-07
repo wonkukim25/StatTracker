@@ -1,0 +1,55 @@
+<%title 'Compare Players'%>
+
+
+
+	<%= form_tag years_players_path, :remote => true, :id => 'years' do %>
+		<div id = "comp">			
+			Batting<%= radio_button_tag 'comp', 'batting', true %>
+			Pitching<%= radio_button_tag 'comp', 'pitching' %>
+		</div>
+		<br/>
+		<table>
+		<tr>
+		<td>
+		<div id = "players">
+			<table>
+				<div id = 'text1'><%= text_field_tag 'players[]', '', :size => 32, :id => "player1", :placeholder => "Start typing a player's name...", :autocomplete => home_autocomplete_player_name_path%></div>
+				<div id = 'text2'><%= text_field_tag 'players[]', '', :size => 32, :id => "player2", :autocomplete => home_autocomplete_player_name_path%></div>
+				<div id = 'text3'><%= text_field_tag 'players[]', '', :size => 32, :id => "player3", :autocomplete => home_autocomplete_player_name_path%></div>
+				<div id = 'text4'><%= text_field_tag 'players[]', '', :size => 32, :id => "player4", :autocomplete => home_autocomplete_player_name_path%></div>
+				<div id = 'text5'><%= text_field_tag 'players[]', '', :size => 32, :id => "player5", :autocomplete => home_autocomplete_player_name_path%></div>
+			</table>
+		</div>
+			<br/>
+                        Career<%= radio_button_tag 'type', 'career' %>
+			<br/>
+			Season<%= radio_button_tag 'type', 'season' %>
+			<br/>
+			Multi-Year<%= radio_button_tag 'type', 'multi' %>
+			<br/>
+			<br/>
+			<%#= submit_tag 'Compare'%>
+		</td>
+	<% end %>	
+
+		<td class = 'years' >
+			<div id = 'years_place'>
+			</div>
+		</td>
+	</tr>
+</table>
+<script type="text/javascript">
+  $('input[name="type"]').change(function(){
+    $(this).parents('form:first').submit();
+  });
+  $('input[name="comp"]').change(function(){
+    if ($('input[name="type"]:checked').val() != null)
+      $('input[name="type"]').parents('form:first').submit();
+  });
+  $('input[name="players[]"]').live('keyup focusout', function(){
+    if ($('input[name="type"]:checked').val() != null)
+      $('input[name="type"]:first').parents('form:first').submit();
+  });
+  
+  
+</script>

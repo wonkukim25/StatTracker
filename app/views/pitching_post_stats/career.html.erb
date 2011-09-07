@@ -1,0 +1,8 @@
+<% if params[:stat] == 'era' %>
+	<h1><% title params[:stat].upcase + " Career Post Season Leaders" %></h1>
+<% else %>
+	<h1><% title params[:stat].titleize + " Career Post Season Leaders" %></h1>
+<% end %>
+
+	<div id = 'chart'></div>
+	<%= raw @table.render('chart') %>

@@ -1,0 +1,3 @@
+<div id = "table"></div>
+<%= raw @table.render('table') %>
+

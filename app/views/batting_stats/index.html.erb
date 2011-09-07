@@ -1,0 +1,26 @@
+<% title "Batting Stats" %>
+
+<table>
+  <tr>
+    <th>Player</th>
+    <th>Team</th>
+	<th>Year</th>
+	<th>Doubles</th>
+	<th>Triples</th>
+	<th>Home Runs</th>
+    <th>Runs Batted In</th>
+
+  </tr>
+  <% for batting_stat in @batting_stats %>
+    <tr>
+      <td><%= batting_stat.player.last_name %></td>
+      <td><%= batting_stat.team.name %></td>
+	  <td><%= batting_stat.team.year %></td>
+	  <td><%= batting_stat.doubles%></td>
+	  <td><%= batting_stat.triples %></td>
+      <td><%= batting_stat.home_runs %></td>
+	  <td><%= batting_stat.rbi %></td>
+    </tr>
+  <% end %>
+</table>
+<p><%= link_to "New Batting Stat", new_batting_stat_path(batting_stat) %></p>

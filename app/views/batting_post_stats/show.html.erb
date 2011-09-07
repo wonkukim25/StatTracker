@@ -1,0 +1,100 @@
+<% title "Batting Post Stat" %>
+
+<p>
+  <strong>Player:</strong>
+  <%= @batting_post_stat.player_id %>
+</p>
+<p>
+  <strong>Team:</strong>
+  <%= @batting_post_stat.team_id %>
+</p>
+<p>
+  <strong>Round:</strong>
+  <%= @batting_post_stat.round %>
+</p>
+<p>
+  <strong>Games:</strong>
+  <%= @batting_post_stat.games %>
+</p>
+<p>
+  <strong>Plate Appearances:</strong>
+  <%= @batting_post_stat.plate_appearances %>
+</p>
+<p>
+  <strong>At Bats:</strong>
+  <%= @batting_post_stat.at_bats %>
+</p>
+<p>
+  <strong>Runs:</strong>
+  <%= @batting_post_stat.runs %>
+</p>
+<p>
+  <strong>Hits:</strong>
+  <%= @batting_post_stat.hits %>
+</p>
+<p>
+  <strong>Doubles:</strong>
+  <%= @batting_post_stat.doubles %>
+</p>
+<p>
+  <strong>Triples:</strong>
+  <%= @batting_post_stat.triples %>
+</p>
+<p>
+  <strong>Home Runs:</strong>
+  <%= @batting_post_stat.home_runs %>
+</p>
+<p>
+  <strong>Total Bases:</strong>
+  <%= @batting_post_stat.total_bases %>
+</p>
+<p>
+  <strong>Extra Base Hits:</strong>
+  <%= @batting_post_stat.extra_base_hits %>
+</p>
+<p>
+  <strong>Rbi:</strong>
+  <%= @batting_post_stat.rbi %>
+</p>
+<p>
+  <strong>Stolen Bases:</strong>
+  <%= @batting_post_stat.stolen_bases %>
+</p>
+<p>
+  <strong>Caught Stealing:</strong>
+  <%= @batting_post_stat.caught_stealing %>
+</p>
+<p>
+  <strong>Walks:</strong>
+  <%= @batting_post_stat.walks %>
+</p>
+<p>
+  <strong>Strikeouts:</strong>
+  <%= @batting_post_stat.strikeouts %>
+</p>
+<p>
+  <strong>Intentional Walks:</strong>
+  <%= @batting_post_stat.intentional_walks %>
+</p>
+<p>
+  <strong>Hit By Pitch:</strong>
+  <%= @batting_post_stat.hit_by_pitch %>
+</p>
+<p>
+  <strong>Sacrifice Hits:</strong>
+  <%= @batting_post_stat.sacrifice_hits %>
+</p>
+<p>
+  <strong>Sacrifice Flies:</strong>
+  <%= @batting_post_stat.sacrifice_flies %>
+</p>
+<p>
+  <strong>Grounded Into Double Plays:</strong>
+  <%= @batting_post_stat.grounded_into_double_plays %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_batting_post_stat_path(@batting_post_stat) %> |
+  <%= link_to "Destroy", @batting_post_stat, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", batting_post_stats_path %>
+</p>

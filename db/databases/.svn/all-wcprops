@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/37/trunk/StatTracker/db/databases
+END
+test.sqlite3
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/37/trunk/StatTracker/db/databases/test.sqlite3
+END
+full.sqlite3
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/37/trunk/StatTracker/db/databases/full.sqlite3
+END

@@ -1,0 +1,37 @@
+one:
+  player_id: 1
+  team_id: 1
+  stint: 1
+  position: MyString
+  games: 1
+  games_started: 1
+  inning_outs: 1
+  chances: 1
+  put_outs: 1
+  assists: 1
+  errors_made: 1
+  double_plays: 1
+  passed_balls: 1
+  wild_pitches: 1
+  stolen_bases: 1
+  caught_stealing: 1
+  zone_rating: 1
+
+two:
+  player_id: 1
+  team_id: 1
+  stint: 1
+  position: MyString
+  games: 1
+  games_started: 1
+  inning_outs: 1
+  chances: 1
+  put_outs: 1
+  assists: 1
+  errors_made: 1
+  double_plays: 1
+  passed_balls: 1
+  wild_pitches: 1
+  stolen_bases: 1
+  caught_stealing: 1
+  zone_rating: 1

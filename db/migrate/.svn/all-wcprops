@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/201/trunk/StatTracker/db/migrate
+END
+20110209235852_create_pitching_stats.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/11/trunk/StatTracker/db/migrate/20110209235852_create_pitching_stats.rb
+END
+20110209233817_create_batting_stats.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/14/trunk/StatTracker/db/migrate/20110209233817_create_batting_stats.rb
+END
+20110209233353_create_batting_post_stats.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/11/trunk/StatTracker/db/migrate/20110209233353_create_batting_post_stats.rb
+END
+20110209234648_create_fielding_post_stats.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/11/trunk/StatTracker/db/migrate/20110209234648_create_fielding_post_stats.rb
+END
+20110209235635_create_pitching_post_stats.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/11/trunk/StatTracker/db/migrate/20110209235635_create_pitching_post_stats.rb
+END
+20110210001159_create_teams.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/11/trunk/StatTracker/db/migrate/20110210001159_create_teams.rb
+END
+20110210000336_create_players.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/196/trunk/StatTracker/db/migrate/20110210000336_create_players.rb
+END
+20110210000337_create_players.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/201/trunk/StatTracker/db/migrate/20110210000337_create_players.rb
+END
+20110209235213_create_franchises.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/11/trunk/StatTracker/db/migrate/20110209235213_create_franchises.rb
+END
+20110209234943_create_fielding_stats.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/11/trunk/StatTracker/db/migrate/20110209234943_create_fielding_stats.rb
+END
+20110209235126_create_leagues.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/11/trunk/StatTracker/db/migrate/20110209235126_create_leagues.rb
+END
+20110209234028_create_divisions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/11/trunk/StatTracker/db/migrate/20110209234028_create_divisions.rb
+END

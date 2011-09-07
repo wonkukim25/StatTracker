@@ -1,0 +1,14 @@
+<table class = 'chart'>
+	<tr>
+		<td class = 'chart'>
+			<div id = 'chart1'></div>
+			<%= raw @chart.render('chart1') %>
+		</td>
+	<tr>
+	</tr>
+		<td class = 'chart'>
+			<div id = 'chart2'></div>
+			<%= raw @chart2.render('chart2') %>
+		</td>
+	</tr>
+</table>

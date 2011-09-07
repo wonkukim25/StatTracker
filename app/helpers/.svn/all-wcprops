@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/303/trunk/StatTracker/app/helpers
+END
+user_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/48/trunk/StatTracker/app/helpers/user_helper.rb
+END
+players_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/11/trunk/StatTracker/app/helpers/players_helper.rb
+END
+error_messages_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/11/trunk/StatTracker/app/helpers/error_messages_helper.rb
+END
+pitching_stats_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/11/trunk/StatTracker/app/helpers/pitching_stats_helper.rb
+END
+leagues_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/11/trunk/StatTracker/app/helpers/leagues_helper.rb
+END
+franchises_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/11/trunk/StatTracker/app/helpers/franchises_helper.rb
+END
+pitching_post_stats_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/11/trunk/StatTracker/app/helpers/pitching_post_stats_helper.rb
+END
+home_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/48/trunk/StatTracker/app/helpers/home_helper.rb
+END
+fielding_stats_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/11/trunk/StatTracker/app/helpers/fielding_stats_helper.rb
+END
+application_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/303/trunk/StatTracker/app/helpers/application_helper.rb
+END
+fielding_post_stats_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/11/trunk/StatTracker/app/helpers/fielding_post_stats_helper.rb
+END
+batting_stats_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/11/trunk/StatTracker/app/helpers/batting_stats_helper.rb
+END
+divisions_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/11/trunk/StatTracker/app/helpers/divisions_helper.rb
+END
+teams_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/11/trunk/StatTracker/app/helpers/teams_helper.rb
+END
+batting_post_stats_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/11/trunk/StatTracker/app/helpers/batting_post_stats_helper.rb
+END
+layout_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/11/trunk/StatTracker/app/helpers/layout_helper.rb
+END

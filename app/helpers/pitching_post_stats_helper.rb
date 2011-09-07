@@ -1,0 +1,2 @@
+module PitchingPostStatsHelper
+end

@@ -1,0 +1,112 @@
+<% title "Pitching Stat" %>
+
+<p>
+  <strong>Player:</strong>
+  <%= @pitching_stat.player_id %>
+</p>
+<p>
+  <strong>Team:</strong>
+  <%= @pitching_stat.team_id %>
+</p>
+<p>
+  <strong>Stint:</strong>
+  <%= @pitching_stat.stint %>
+</p>
+<p>
+  <strong>Wins:</strong>
+  <%= @pitching_stat.wins %>
+</p>
+<p>
+  <strong>Losses:</strong>
+  <%= @pitching_stat.losses %>
+</p>
+<p>
+  <strong>Games:</strong>
+  <%= @pitching_stat.games %>
+</p>
+<p>
+  <strong>Games Started:</strong>
+  <%= @pitching_stat.games_started %>
+</p>
+<p>
+  <strong>Complete Games:</strong>
+  <%= @pitching_stat.complete_games %>
+</p>
+<p>
+  <strong>Shutouts:</strong>
+  <%= @pitching_stat.shutouts %>
+</p>
+<p>
+  <strong>Saves:</strong>
+  <%= @pitching_stat.saves %>
+</p>
+<p>
+  <strong>Innings Pitched Outs:</strong>
+  <%= @pitching_stat.innings_pitched_outs %>
+</p>
+<p>
+  <strong>Hits:</strong>
+  <%= @pitching_stat.hits %>
+</p>
+<p>
+  <strong>Earned Runs:</strong>
+  <%= @pitching_stat.earned_runs %>
+</p>
+<p>
+  <strong>Home Runs:</strong>
+  <%= @pitching_stat.home_runs %>
+</p>
+<p>
+  <strong>Walks:</strong>
+  <%= @pitching_stat.walks %>
+</p>
+<p>
+  <strong>Strikeouts:</strong>
+  <%= @pitching_stat.strikeouts %>
+</p>
+<p>
+  <strong>Intentional Walks:</strong>
+  <%= @pitching_stat.intentional_walks %>
+</p>
+<p>
+  <strong>Wild Pitches:</strong>
+  <%= @pitching_stat.wild_pitches %>
+</p>
+<p>
+  <strong>Hit By Pitch:</strong>
+  <%= @pitching_stat.hit_by_pitch %>
+</p>
+<p>
+  <strong>Balks:</strong>
+  <%= @pitching_stat.balks %>
+</p>
+<p>
+  <strong>Batters Faced:</strong>
+  <%= @pitching_stat.batters_faced %>
+</p>
+<p>
+  <strong>Games Finished:</strong>
+  <%= @pitching_stat.games_finished %>
+</p>
+<p>
+  <strong>Runs:</strong>
+  <%= @pitching_stat.runs %>
+</p>
+<p>
+  <strong>Sacrifice Hits:</strong>
+  <%= @pitching_stat.sacrifice_hits %>
+</p>
+<p>
+  <strong>Sacrifice Flies:</strong>
+  <%= @pitching_stat.sacrifice_flies %>
+</p>
+<p>
+  <strong>Grounded Into Double Plays:</strong>
+  <%= @pitching_stat.grounded_into_double_plays %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_pitching_stat_path(@pitching_stat) %> |
+  <%= link_to "Destroy", @pitching_stat, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", pitching_stats_path %>
+</p>

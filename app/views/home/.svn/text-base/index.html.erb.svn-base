@@ -1,0 +1,46 @@
+
+<script type="text/javascript">
+	$(window).load(function() {
+    $('#slider').nivoSlider( {
+	effect:'fade',
+		directionNav:true, // Next & Prev navigation
+    directionNavHide:true, // Only show on hover
+    controlNav:true
+	}	);
+	});
+	</script>
+<div id="slider">
+    <img src="../images/slide1.jpg" alt="" />
+    <img src="../images/slide2.jpg" alt="" />
+	<img src="../images/slide3.jpg" alt="" />
+	 <img src="../images/slide4.jpg" alt="" />
+	  <img src="../images/slide5.jpg" alt="" />
+	   <img src="../images/slide6.jpg" alt="" />
+	    <img src="../images/slide7.jpg" alt="" />
+		 <img src="../images/slide9.jpg" alt="" />
+		  <img src="../images/slide8.jpg" alt="" />
+		   <img src="../images/slide10.jpg" alt="" />
+		    <img src="../images/slide11.jpg" alt="" />
+			<img src="../images/slide12.jpg" alt="" />
+		
+</div>
+
+<div class="nivo-directionNav" style="display:none; ">
+	<a class="nivo-prevNav">Prev</a>
+	<a class="nivo-nextNav">Next</a>
+	
+	
+</div>
+
+
+	<div class="button" id="comparePlayers"><%= link_to 'Compare Players now > ', 'compare' %></div>
+        <div class="button" id="compareTeams"><%= link_to 'Compare Teams now > ', 'franchise_compare' %></div>
+
+	
+
+
+	
+	
+	
+	
+

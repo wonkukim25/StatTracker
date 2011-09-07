@@ -1,0 +1,67 @@
+<% title "Players" %>
+    <%= form_tag(player_search_path) do %>
+    <tr>
+      <th> Search by Name </th>       
+                    <%= text_field_tag('query','',:size => 15,:placeholder => 'Enter a player..', :class => 'field_style', :autocomplete => players_autocomplete_player_name_path)%>
+    </tr>
+    <br />
+    <br />
+     <tr>
+      <th> Players by Last Name </th>
+                          <%= select_tag "letter",
+                          raw("<option></option>
+                          <option>A</option>
+                          <option>B</option>
+                          <option>C</option>
+                          <option>D</option>
+                          <option>E</option>
+                          <option>F</option>
+                          <option>G</option>
+                          <option>H</option>
+                          <option>I</option>
+                          <option>J</option>
+                          <option>K</option>
+                          <option>L</option>
+                          <option>M</option>
+                          <option>N</option>
+                          <option>O</option>
+                          <option>P</option>
+                          <option>Q</option>
+                          <option>R</option>
+                          <option>S</option>
+                          <option>T</option>
+                          <option>U</option>
+                          <option>V</option>
+                          <option>W</option>
+                          <option>X</option>
+                          <option>Y</option>
+                          <option>Z</option>")
+		%>
+    </tr>
+        <br />
+    <br />
+     <tr>
+      <th> Players by Position </th>
+                          <%= select_tag "position",
+                          raw("<option></option>
+                          <option>P</option>
+                          <option>C</option>
+                          <option>1B</option>
+                          <option>2B</option>
+                          <option>3B</option>
+                          <option>SS</option>
+                          <option>LF</option>
+                          <option>CF</option>
+                          <option>RF</option>
+                          <option>OF</option>
+                          <option>DH</option>")
+		%>      
+    </tr>
+    <br /><br /><%= submit_tag('Search') %>
+    <% end %>
+	
+	<style>
+#container{
+margin-bottom:-110px;
+}
+</style>

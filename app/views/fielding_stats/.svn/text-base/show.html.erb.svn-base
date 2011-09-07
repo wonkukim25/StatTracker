@@ -1,0 +1,76 @@
+<% title "Fielding Stat" %>
+
+<p>
+  <strong>Player:</strong>
+  <%= @fielding_stat.player_id %>
+</p>
+<p>
+  <strong>Team:</strong>
+  <%= @fielding_stat.team_id %>
+</p>
+<p>
+  <strong>Stint:</strong>
+  <%= @fielding_stat.stint %>
+</p>
+<p>
+  <strong>Position:</strong>
+  <%= @fielding_stat.position %>
+</p>
+<p>
+  <strong>Games:</strong>
+  <%= @fielding_stat.games %>
+</p>
+<p>
+  <strong>Games Started:</strong>
+  <%= @fielding_stat.games_started %>
+</p>
+<p>
+  <strong>Inning Outs:</strong>
+  <%= @fielding_stat.inning_outs %>
+</p>
+<p>
+  <strong>Chances:</strong>
+  <%= @fielding_stat.chances %>
+</p>
+<p>
+  <strong>Put Outs:</strong>
+  <%= @fielding_stat.put_outs %>
+</p>
+<p>
+  <strong>Assists:</strong>
+  <%= @fielding_stat.assists %>
+</p>
+<p>
+  <strong>Errors Made:</strong>
+  <%= @fielding_stat.errors_made %>
+</p>
+<p>
+  <strong>Double Plays:</strong>
+  <%= @fielding_stat.double_plays %>
+</p>
+<p>
+  <strong>Passed Balls:</strong>
+  <%= @fielding_stat.passed_balls %>
+</p>
+<p>
+  <strong>Wild Pitches:</strong>
+  <%= @fielding_stat.wild_pitches %>
+</p>
+<p>
+  <strong>Stolen Bases:</strong>
+  <%= @fielding_stat.stolen_bases %>
+</p>
+<p>
+  <strong>Caught Stealing:</strong>
+  <%= @fielding_stat.caught_stealing %>
+</p>
+<p>
+  <strong>Zone Rating:</strong>
+  <%= @fielding_stat.zone_rating %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_fielding_stat_path(@fielding_stat) %> |
+  <%= link_to "Destroy", @fielding_stat, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", fielding_stats_path %>
+</p>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/93/trunk/StatTracker/install
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/93/trunk/StatTracker/install/Rakefile
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/93/trunk/StatTracker/install/.gitignore
+END
+Gemfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/93/trunk/StatTracker/install/Gemfile
+END
+install.gemspec
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/93/trunk/StatTracker/install/install.gemspec
+END

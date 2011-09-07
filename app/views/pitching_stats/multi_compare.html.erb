@@ -1,0 +1,83 @@
+<% title "Multi-Season Pitching Comparison" %>
+
+You are comparing <%= @strings.join(", ") %>
+<br/>
+<br/>
+
+	<div id = 'table_place'>
+		<%= render :partial => 'table'  %> 
+	</div>
+	
+	<br/>
+	
+	<div id = "table_checkbox">
+		<span><p>Check which statistics you want to view in the table</p></span>
+		<%= form_tag change_multi_table_pitching_path(:players => @players, :pitchers => @pitchers.keys), :remote => true, :id => "change_table"  do %>
+			<span title="Wins"><%= check_box_tag 'stat[]', 'wins', true %>W</span>&nbsp;
+			<span title="Losses"><%= check_box_tag 'stat[]', 'losses', true %>L</span>&nbsp;
+			<span title="Games"><%= check_box_tag 'stat[]', 'games', false %>G</span>&nbsp;
+			<span title="Games Started"><%= check_box_tag 'stat[]', 'games_started', false %>GS</span>&nbsp;
+			<span title="Complete Games"><%= check_box_tag 'stat[]', 'complete_games', false %>CG</span>&nbsp;
+			<span title="Shutouts"><%= check_box_tag 'stat[]', 'shutouts', false %>SO</span>&nbsp;
+			<span title="Saves"><%= check_box_tag 'stat[]', 'saves', true %>SV</span>&nbsp;
+			<span title="Hits"><%= check_box_tag 'stat[]', 'hits', false %>H</span>&nbsp;
+			<span title="Runs"><%= check_box_tag 'stat[]', 'runs', false %>R</span>&nbsp;
+			<span title="Earned Runs"><%= check_box_tag 'stat[]', 'earned_runs', true %>ER</span>&nbsp;
+			<span title="Home Runs"><%= check_box_tag 'stat[]', 'home_runs', false %>HR</span>&nbsp;
+			<br/>
+			<span title="Walks"><%= check_box_tag 'stat[]', 'walks', false %>BB</span>&nbsp;
+			<span title="Strikeouts"><%= check_box_tag 'stat[]', 'strikeouts', true %>K</span>&nbsp;
+			<span title="Intentional Walks"><%= check_box_tag 'stat[]', 'intentional_walks', false %>IBB</span>&nbsp;
+			<span title="Wild Pitches"><%= check_box_tag 'stat[]', 'wild_pitches', false %>WP</span>&nbsp;
+			<span title="Hit by Pitch"><%= check_box_tag 'stat[]', 'hit_by_pitch', false %>HBP</span>&nbsp;
+			<span title="Balks"><%= check_box_tag 'stat[]', 'balks', false %>BK</span>&nbsp;
+			<span title="Batters Faced"><%= check_box_tag 'stat[]', 'batters_faced', false %>BF</span>&nbsp;
+			<span title="Games Finished"><%= check_box_tag 'stat[]', 'games_finished', false %>GF</span>&nbsp;
+			</br>
+			<%= submit_tag 'Update' %>
+		<% end %>
+	</div>
+	
+	<br/>
+	<br/>	
+
+	<div id = 'chart_select'>
+		<span><p>Select a new statistic to change the charts</p></span>
+		<%= form_tag change_multi_chart_pitching_path(:players => @players, :pitchers => @pitchers.keys, :max => @max, :years => @years), :remote => true, :id => "change_chart" do %>
+			<%= select_tag "chart_type", 
+			raw("
+			<option>Wins</option>
+			<option>Losses</option>
+			<option>Games</option>
+			<option>Games Started</option>
+			<option>Complete Games</option>
+			<option>Shutouts</option>
+			<option>Saves</option>
+			<option>Hits</option>
+			<option>Runs</option>
+			<option>Earned Runs</option>
+			<option>Home Runs</option>
+			<option>Walks</option>
+			<option>Strikeouts</option>
+			<option>Intentional Walks</option>
+			<option>Wild Pitches</option>
+			<option>Hit By Pitch</option>
+			<option>Balks</option>
+			<option>Batters Faced</option>
+			<option>Games Finished</option>
+			") %>
+			<%#= submit_tag 'Update' %>
+		<% end %>
+	</div>
+	
+	<br/>
+	
+	<div id = 'chart_place'>
+		<%= render :partial => 'chart'  %> 
+	</div>
+
+        <script type="text/javascript">
+          $('#chart_type').change(function(){
+            $(this).parents('form:first').submit();
+          });
+        </script>

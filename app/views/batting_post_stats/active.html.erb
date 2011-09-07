@@ -1,0 +1,8 @@
+<% if params[:stat] == 'rbi' %>
+	<h1><% title params[:stat].upcase + " Active Post Season Leaders" %></h1>
+<% else %>
+	<h1><% title params[:stat].titleize + " Active Post Season Leaders" %></h1>
+<% end %>
+
+	<div id = 'chart'></div>
+	<%= raw @table.render('chart') %>

@@ -1,0 +1,526 @@
+html {
+	height:100%;
+}
+
+body {
+  background-image: url('/images/texture.png');
+  background-position: 0px -70px;
+  font-family: Helvetica;
+  font-size: 16px;
+  background-attachment: fixed;
+  background-repeat: repeat-x;
+  height:100%;
+  margin:0px;
+}
+
+p{
+
+}
+a:link{
+text-decoration:none;
+color:black;
+font-weight:bold;
+}
+a:visited{
+text-decoration:none;
+color:black;
+}
+
+a:hover{
+color: #733108;
+}
+
+
+h1{
+color:#523300;
+margin-top:0px;
+text-align: center;
+font-size:27px;
+}
+
+#hd {
+width:1100px;
+height:118px;
+top: 0px;
+left: 0px;
+width:461px;
+margin-left:auto;
+margin-right:auto;
+}
+
+#hd img{
+margin-top:10px;
+position:relative;
+}
+
+#stitches{
+background: url('/images/stitches.png') repeat-x;
+min-width:990px;
+width:100%;
+height:10px;
+margin-top:10px;
+}
+
+#text{
+	margin-top: -510px;
+}
+
+img {
+  border: none;
+  
+}
+
+div.player  {
+  border: none;
+  width: 400px;
+  height: 500px;
+  margin-left: 35%;
+}
+
+a {
+  color: #0000FF;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+
+#nav {
+	list-style: none;
+	position: relative;
+	height:40px;
+	width:1100px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #F0E8D9;
+	border-bottom:2px solid #996600;
+	margin-top:5px;
+	}
+	
+#nav li {
+	list-style: none;
+	float:left;
+	width:100px;
+	margin-top:10px;
+	}
+	
+#nav li a {
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	color:  #996600;
+	border-right: none; 
+	font-size: 17px;
+	}
+	
+#nav li a:hover{
+	color: #693600; 
+	}
+
+	
+ul #cssdropdown li a:hover{
+border-bottom:none;
+	
+}
+
+#cssdropdown, #cssdropdown * { 
+	list-style: none;
+	padding: 4px 4px; 
+	margin: 0; 
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	-o-border-radius:15px;
+	border-radius:15px;
+	z-index:100;
+	margin-top:8px;
+	}
+	
+#cssdropdown li {
+	width:250px;
+	z-index:100;
+	margin-top:-15px;
+}
+ .dropdownmenu{
+	color:#996600;
+	font-family: Helvetica;
+	font-size: 17px;
+	font-weight:bold;
+	text-align:center;
+ }
+ 
+ .dropdownmenu:hover{
+ color:#693600;
+ }
+ 
+ li.dropdownmenu ul { 
+	display: none; 
+	text-align: left;
+	width:150px;
+	z-index:50;
+	}
+ li.dropdownmenu:hover ul { 
+	display: block; 
+	position: absolute;
+	float:left;
+	background-color: #F0E8D9;
+	z-index:50;
+	}
+	
+ ul.tablerow li{
+ float: left;
+ display: block;
+ width: 100px;
+ font-family: Helvetica;
+ border-left:5px solid #888888;
+ padding: 2px 10px;
+ }
+ 
+ ul.tablerow li.first{
+ font-size:16px;
+ font-weight: bold;
+ border-left:none;
+ }
+div.button{
+width:200px;
+position:relative;
+float:left;
+}
+
+#comparePlayers{
+margin-top:-300px;
+margin-left: 650px;
+}
+
+#compareTeams{
+margin-top:-200px;
+margin-left: 650px;
+}
+
+div.button a{
+		font-size:15px;
+		font-weight: bold;
+		color:black;
+		text-decoration:none;
+		display:block;
+		width:200px;
+		padding:10px;
+		text-align:center;
+		border:1px solid black;
+		-moz-border-radius:15px;
+		-webkit-border-radius:15px;
+		-o-border-radius:15px;
+		border-radius:15px;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#B0B0B0'); /* for IE */
+        background: -webkit-gradient(linear, left top, left bottom, from(white), to(#888)); /* for webkit browsers */
+        background: -moz-linear-gradient(top,  white,  #888); /* for firefox 3.6+ */ 
+	}
+div.button:hover a{
+		color: #731A00;
+		border:1px solid #731A00;
+		
+	}
+ 
+
+	
+#sign{
+	float:right;
+	font-weight: bold;
+	color: black;
+	color: black;
+	}
+		
+
+#container{
+	background-color:#E6E6D9;
+	margin-left:auto;
+	margin-top:0px;
+	margin-right:auto;
+	margin-bottom:110px;
+	overflow:auto;
+	position:relative;
+	padding:20px;
+	padding-bottom:60px;
+	font-size: 16px;
+	width:1060px;
+}
+
+#slider {
+    position:relative;
+	width:330px; /* Change this to your images width */
+    height:301px; /* Change this to your images height */
+	margin-left:200px;
+}
+#slider img {
+    position:relative;
+    left:0px;
+    display:none;
+	width:330px;
+	height:400px;
+}
+#slider a {
+    border:0;
+    display:block;
+}
+a.nivo-prevNav {
+left: 0px;
+z-index:100;
+}
+.nivo-directionNav a {
+display: block;
+width: 30px;
+height: 30px;
+background: url('../images/arrows.png') no-repeat;
+text-indent: -9999px;
+border: 0;
+position: relative;
+top: 100px;
+z-index: 100;
+cursor: pointer;
+}
+
+a.nivo-nextNav {
+background-position: -30px 0;
+right: 5px;
+z-index:100;
+}
+
+.nivo-controlNav {
+position: absolute;
+margin-top: 400px;
+margin-left:auto;
+margin-right:auto;
+width:400px;
+padding:10px;
+}
+
+.nivo-controlNav a.active {
+background-position: 0 -22px;
+font-weight: bold;
+}
+.nivo-controlNav a {
+display: block;
+width: 22px;
+height: 22px;
+background: url('http://nivo.dev7studios.com/images/bullets.png') no-repeat;
+text-indent: -9999px;
+border: 0;
+margin-right: 3px;
+float: left;
+position: relative;
+z-index: 9;
+cursor: pointer;
+}
+
+td.years {
+	vertical-align: top;
+	padding-left: 10px;
+}
+
+td.chart {
+width: 45%
+}
+
+table.chart {
+width: 100%
+}
+
+#table_checkbox {
+text-align:center;
+}
+
+#chart_select {
+text-align:center;
+}
+
+#batting_advanced {
+display:none;
+}
+
+#batting_simple_button {
+display:none;
+}
+
+#batting_post_advanced {
+display:none;
+}
+
+#batting_post_simple_button {
+display:none;
+}
+
+#pitching_advanced {
+display:none;
+}
+
+#pitching_simple_button {
+display:none;
+}
+
+#pitching_post_advanced {
+display:none;
+}
+
+#pitching_post_simple_button {
+display:none;
+}
+
+.years_select {
+padding:2.75px;
+}
+
+#flash_notice, #flash_error, #flash_alert {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+#flash_notice {
+  background-color: red;
+  border: solid 1px black;
+}
+
+#flash_error, #flash_alert {
+  background-color: red;
+  border: solid 1px black;
+}
+
+.field_style{
+
+}
+
+
+.fieldWithErrors {
+  display: inline;
+}
+
+.error_messages {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: red;
+  font-size: 12px;
+}
+
+.error_messages h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+.error_messages p {
+  margin: 8px 10px;
+}
+
+.error_messages ul {
+  margin: 0;
+}
+.google-visualization-table-tr-head:nth-child(n+0), .google-visualization-table-tr-head td:nth-child(n+0), .google-visualization-table-tr-head-nonstrict:nth-child(n+0){text-align:left;}
+.google-visualization-table-td:nth-child(n+0){text-align:left;}
+.google-visualization-table-table *{text-align:left;}
+#chart a, #chart2 a, #chart3 a, #chart4 a, #chart5 a, #chart6 a, #chart7 a, #chart8 a, #table_place a, #table a{ text-decoration: underline;
+}
+#table_place{ text-align:center;}
+.tooltip {
+		display:none;
+		background-color:#ffa;
+		border:1px solid #cc9;
+		padding:3px;
+		font-size:13px;
+		-moz-box-shadow: 2px 2px 11px #666;
+		-webkit-box-shadow: 2px 2px 11px #666;
+	}
+        .tooltip:hover span {
+  font-family: Calibri, Tahoma, Geneva, sans-serif;
+  position: absolute;
+  left: 1em;
+  top: 2em;
+  z-index: 99;
+  margin-left: 0;
+  width: 250px;
+}
+.tooltip:hover img {
+  border: 0;
+  margin: -10px 0 0 -55px;
+  float: left;
+  position: absolute;
+}
+.tooltip:hover em {
+  font-family: Candara, Tahoma, Geneva, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  padding: 0.2em 0 0.6em 0;
+}
+.classic { padding: 0.8em 1em; }
+.custom { padding: 0.5em 0.8em 0.8em 2em; }
+* html a:hover { background: transparent; }
+.sepimgstat {
+background-color: #B0B0B0;
+padding: 10px;
+margin-right: 5px;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 100%;
+height: 2px;
+}    
+
+.slide-out-div {
+          padding: 10px;
+		  padding-bottom:10px;
+          width: 550px;
+		  height:550px;
+          background:  #F0F0EE;
+		  z-index:50;
+		  opacity:0.9;
+          border: 1px solid #333300;
+		  color:#693600;
+		  font-weight:bold;
+		  font-size:13px;
+		  z-index:5;
+      }
+	  
+.slide-out-div h2,h3{
+		  color:#996600;
+
+}
+
+.slide-out-div a:hover{
+color:#771200;
+}
+	  
+
+#wrapper{
+	min-height:100%;
+}
+
+
+#footercontent{
+ font-family: Helvetica;
+  font-size: 15px;  
+  color:white;
+  font-weight:bold;
+}
+
+#footer{
+background-image:url('/images/grass.png');
+background-repeat:repeat-x;
+  position:relative;
+  clear:both;
+  padding-top:30px;
+  margin-top:-80px;
+  width:100%;
+  height:80px;
+}
+
+#footer a{
+color:#white;
+}

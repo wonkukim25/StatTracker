@@ -1,0 +1,13 @@
+<h1> Single Season Franchise Compare <span title="Hover over numbers or click on glossary tab to learn more"><%= image_tag("question.gif")%></span></h1>
+<div id = 'pitching_simple'>
+	<div id='chart'></div>
+	<%= raw @chart.render('chart') %>
+</div>
+		
+<div id = 'pitching_advanced'>
+	<div id='table'></div>
+	<%= raw @table.render('table') %>
+</div>
+<br/>
+<%= submit_tag "View Advanced Stats", :id => "pitching_advanced_button" %>
+<%= submit_tag "View Simple Stats", :id => "pitching_simple_button" %>

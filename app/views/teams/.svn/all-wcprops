@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/335/trunk/StatTracker/app/views/teams
+END
+_table.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/175/trunk/StatTracker/app/views/teams/_table.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/11/trunk/StatTracker/app/views/teams/index.html.erb
+END
+career_compare.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/335/trunk/StatTracker/app/views/teams/career_compare.html.erb
+END
+_chart.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/175/trunk/StatTracker/app/views/teams/_chart.js.erb
+END
+season_compare.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/335/trunk/StatTracker/app/views/teams/season_compare.html.erb
+END
+_table.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/175/trunk/StatTracker/app/views/teams/_table.js.erb
+END
+multi_compare.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/335/trunk/StatTracker/app/views/teams/multi_compare.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/332/trunk/StatTracker/app/views/teams/show.html.erb
+END
+_chart.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/175/trunk/StatTracker/app/views/teams/_chart.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/11/trunk/StatTracker/app/views/teams/_form.html.erb
+END

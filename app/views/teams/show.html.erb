@@ -1,0 +1,46 @@
+<% title @team.year.to_s + " " + @team.name%>
+<p>
+  <strong>Franchise:</strong>
+  <%=link_to h(@franchise.name), franchise_path(@franchise) %>
+</p>
+<p><strong>Rank: </strong><%= @team.rank.ordinalize %> in <%= @team.division.league.name %> <%= @team.division.name %></p>
+<p>
+  <strong>Baseball Era:</strong>
+  <%= @team.baseball_era %>
+</p>
+<p>
+  <strong>Park:</strong>
+  <%= @team.park %>
+</p>
+<%  if !@team.attendance.nil?%>
+<p>
+  <strong>Attendance:</strong>
+  <%= number_with_delimiter(@team.attendance, :delimiter => ',') %>
+  <% end %>
+</p>
+
+<p><strong>Games: </strong><%= @team.games %></p>
+<%if !@team.home_games.nil?%><p><strong>Home Games: </strong><%= @team.home_games %></p><% end %>
+<p><strong>Wins-Losses: </strong><%= @team.wins %>-<%= @team.losses %></p>
+<p><strong>Percentage: </strong><%=@team.pct %></p>
+<p><%if @team.div_win%><%= image_tag("trophy.png")%> Division Win<% end %></p>
+<p><%if @team.wc_win%><%= image_tag("trophy.png")%> Wild Card Winner<% end %></p>
+<p><%if @team.lg_win%><%= image_tag("trophy.png")%> League Win<% end %></p>
+<p><%if @team.ws_win%><%= image_tag("trophy.png")%> World Series Win<% end %></p>
+<br/>
+<strong>Team Batting Stats </strong><span title="Hover over numbers or click on side tab to learn more"><%= image_tag("question.gif")%></span>
+<br/>
+<div id='chart2'></div>
+<%= raw @chart2.render('chart2') %>
+<br/>
+<br/>
+<strong>Team Pitching and Fielding Stats </strong><span title="Hover over numbers or click on the glossary tab to learn more"><%= image_tag("question.gif")%></span>
+<br/>
+<div id='chart3'></div>
+<%= raw @chart3.render('chart3') %>
+<br/>
+<br/>
+<strong>Team Roster</strong>
+<br/>
+<div id='chart4'></div>
+<%= raw @chart4.render('chart4') %>

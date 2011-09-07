@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/229/trunk/StatTracker/db
+END
+schema.rb
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/201/trunk/StatTracker/db/schema.rb
+END
+tempfile.2.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/37/trunk/StatTracker/db/tempfile.2.tmp
+END
+tempfile.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/33/trunk/StatTracker/db/tempfile.tmp
+END
+development.sqlite3
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/229/trunk/StatTracker/db/development.sqlite3
+END
+seeds.rb
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/StatTracker/db/seeds.rb
+END
+tempfile.3.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/215/trunk/StatTracker/db/tempfile.3.tmp
+END

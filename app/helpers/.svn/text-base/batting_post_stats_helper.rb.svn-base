@@ -1,0 +1,2 @@
+module BattingPostStatsHelper
+end

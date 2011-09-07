@@ -1,0 +1,88 @@
+<% title "Franchise Compare" %>
+
+	<div id = 'table_place'>
+		<%= render :partial => 'table'  %> 
+	</div>
+
+	<br/>
+	
+	<div id = "table_checkbox">
+		<span><p>Check which statistics you want to view in the table</p></span>
+		<%= form_tag change_career_table_team_path(:franchises => @franchises), :remote => true, :id => "change_table" do %>
+			<span title="Wins"><%= check_box_tag 'stat[]', 'wins', true %>W</span>&nbsp;
+			<span title="Losses"><%= check_box_tag 'stat[]', 'losses', true %>L</span>&nbsp;
+			<span title="Plate Appearances"><%= check_box_tag 'stat[]', 'plate_appearances', false %>PA</span>&nbsp;
+			<span title="At Bats"><%= check_box_tag 'stat[]', 'at_bats', false %>AB</span>&nbsp;
+			<span title="Runs"><%= check_box_tag 'stat[]', 'runs', true %>R</span>&nbsp;
+			<span title="Hits"><%= check_box_tag 'stat[]', 'hits',  false %>H</span>&nbsp;
+			<span title="Doubles"><%= check_box_tag 'stat[]', 'doubles', false %>2B</span>&nbsp;
+			<span title="Triples"><%= check_box_tag 'stat[]', 'triples', false %>3B</span>&nbsp;
+			<span title="Home Runs"><%= check_box_tag 'stat[]', 'home_runs', false %>HR</span>&nbsp;
+			<span title="Total Bases"><%= check_box_tag 'stat[]', 'total_bases', false %>TB</span>&nbsp;
+			<span title="Extra Base Hits"><%= check_box_tag 'stat[]', 'extra_base_hits', false %>XBH</span>&nbsp;
+			<span title="Stolen Bases"><%= check_box_tag 'stat[]', 'stolen_bases', false %>SB</span>&nbsp;
+			<span title="Caught Stealing"><%= check_box_tag 'stat[]', 'caught_stealing', false %>CS</span>&nbsp;
+			<br/>
+			<span title="Walks"><%= check_box_tag 'stat[]', 'walks', false %>BB</span>&nbsp;
+			<span title="Strikeouts"><%= check_box_tag 'stat[]', 'strikeouts', false %>K</span>&nbsp;
+			<span title="Runs Allowed"><%= check_box_tag 'stat[]', 'runs_allowed', true %>RA</span>&nbsp;
+			<span title="Earned Runs"><%= check_box_tag 'stat[]', 'earned_runs', false %>ER</span>&nbsp;
+			<span title="Complete Games"><%= check_box_tag 'stat[]', 'complete_games', false %>CG</span>&nbsp;
+			<span title="Shutouts"><%= check_box_tag 'stat[]', 'shutouts', false %>SO</span>&nbsp;
+			<span title="Saves"><%= check_box_tag 'stat[]', 'saves', false %>SV</span>&nbsp;
+			<span title="Hits Allowed"><%= check_box_tag 'stat[]', 'hits_allowed', false %>HA</span>&nbsp;
+			<span title="Home Runs Allowed"><%= check_box_tag 'stat[]', 'home_runs_allowed', false %>HRA</span>&nbsp;
+			<span title="Walks Allowed"><%= check_box_tag 'stat[]', 'walks_allowed', false %>BBA</span>&nbsp;
+			<span title="Strikeouts Allowed"><%= check_box_tag 'stat[]', 'strikeouts_allowed', false %>KA</span>&nbsp;
+			<span title="Errors Made"><%= check_box_tag 'stat[]', 'errors_made', true %>E</span>&nbsp;
+			<br/>
+			<%= submit_tag 'Update' %>
+		<% end %>
+	</div>
+	
+	<br/>
+	<br/>
+	
+	<div id = 'chart_select'>
+		<%= form_tag change_career_chart_team_path(:franchises => @franchises), :id => "change_chart", :remote => true do %>
+			<%= select_tag "chart_type", 
+			raw("<option>Wins</option>
+			<option>Losses</option>
+			<option>Plate Appearances</option>
+			<option>At Bats</option>
+			<option>Runs</option>
+			<option>Hits</option>
+			<option>Doubles</option>
+			<option>Triples</option>
+			<option>Home Runs</option>
+			<option>Total Bases</option>
+			<option>Extra Base Hits</option>
+			<option>Stolen Bases</option>
+			<option>Caught Stealing</option>
+			<option>Walks</option>
+			<option>Strikeouts</option>
+			<option>Runs Allowed</option>
+			<option>Earned Runs</option>
+			<option>Complete Games</option>
+			<option>Shutouts</option>
+			<option>Saves</option>
+			<option>Hits Allowed</option>
+			<option>Home Runs Allowed</option>
+			<option>Walks Allowed</option>
+			<option>Strikeouts Allowed</option>
+			<option>Errors Made</option>")
+			%>
+			<%#= submit_tag 'Update' %>
+		<% end %>
+	</div>
+	<br/>
+	
+	<div id = 'chart_place'>
+		<%= render :partial => 'chart'  %> 
+	</div>
+	
+	<script type="text/javascript">
+          $('#chart_type').change(function(){
+            $(this).parents('form:first').submit();
+          });
+        </script>

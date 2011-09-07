@@ -1,0 +1,61 @@
+<% title "Batting Post Stats" %>
+
+<table>
+  <tr>
+    <th>Player</th>
+    <th>Team</th>
+    <th>Round</th>
+    <th>Games</th>
+    <th>Plate Appearances</th>
+    <th>At Bats</th>
+    <th>Runs</th>
+    <th>Hits</th>
+    <th>Doubles</th>
+    <th>Triples</th>
+    <th>Home Runs</th>
+    <th>Total Bases</th>
+    <th>Extra Base Hits</th>
+    <th>Rbi</th>
+    <th>Stolen Bases</th>
+    <th>Caught Stealing</th>
+    <th>Walks</th>
+    <th>Strikeouts</th>
+    <th>Intentional Walks</th>
+    <th>Hit By Pitch</th>
+    <th>Sacrifice Hits</th>
+    <th>Sacrifice Flies</th>
+    <th>Grounded Into Double Plays</th>
+  </tr>
+  <% for batting_post_stat in @batting_post_stats %>
+    <tr>
+      <td><%= batting_post_stat.player_id %></td>
+      <td><%= batting_post_stat.team_id %></td>
+      <td><%= batting_post_stat.round %></td>
+      <td><%= batting_post_stat.games %></td>
+      <td><%= batting_post_stat.plate_appearances %></td>
+      <td><%= batting_post_stat.at_bats %></td>
+      <td><%= batting_post_stat.runs %></td>
+      <td><%= batting_post_stat.hits %></td>
+      <td><%= batting_post_stat.doubles %></td>
+      <td><%= batting_post_stat.triples %></td>
+      <td><%= batting_post_stat.home_runs %></td>
+      <td><%= batting_post_stat.total_bases %></td>
+      <td><%= batting_post_stat.extra_base_hits %></td>
+      <td><%= batting_post_stat.rbi %></td>
+      <td><%= batting_post_stat.stolen_bases %></td>
+      <td><%= batting_post_stat.caught_stealing %></td>
+      <td><%= batting_post_stat.walks %></td>
+      <td><%= batting_post_stat.strikeouts %></td>
+      <td><%= batting_post_stat.intentional_walks %></td>
+      <td><%= batting_post_stat.hit_by_pitch %></td>
+      <td><%= batting_post_stat.sacrifice_hits %></td>
+      <td><%= batting_post_stat.sacrifice_flies %></td>
+      <td><%= batting_post_stat.grounded_into_double_plays %></td>
+      <td><%= link_to "Show", batting_post_stat %></td>
+      <td><%= link_to "Edit", edit_batting_post_stat_path(batting_post_stat) %></td>
+      <td><%= link_to "Destroy", batting_post_stat, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Batting Post Stat", new_batting_post_stat_path(batting_post_stat) %></p>
